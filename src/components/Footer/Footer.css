@@ -1,0 +1,73 @@
+.footer {
+    background-color: #282c34;
+    color: #61dafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-media {
+    display: flex;
+    width: 90%;
+    margin: 48px;
+    max-width: 1060px;
+  }
+  
+  .banner-a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 20px 30px;
+    width: 20%;
+  }
+  
+  .facebook {
+    border-start-start-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(74, 74, 163);
+  }
+  
+  .twitter {
+    background-color: #28c3ed;
+  }
+  
+  .youtube {
+    background-color: rgb(255, 91, 91);
+  }
+  
+  .discord {
+    background-color: black;
+  }
+  
+  .instagram {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(95, 95, 208);
+  }
+  
+  hr {
+    width: 90%;
+    border-color: #73767c;
+    max-width: 1060px;
+  }
+  
+  .imp-link {
+    margin: 48px;
+  }
+  
+  .link-bot {
+    margin: 0 10px;
+    color: white;
+    font-size: 14px;
+  
+  }
+  
+  .logo-copyright {
+    color: #73767c;
+    font-size: 12px;
+    min-width: 250px;
+  
+  }
+  
+ 

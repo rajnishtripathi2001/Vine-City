@@ -1,0 +1,78 @@
+.sec-5{
+    background-color: #2e3645;
+    color: white;
+  }
+  .text{
+    
+    text-align: left;
+    width:50%;
+  }
+  .text h1{
+    font-size: 42px;
+    margin: 0;
+  }
+  .text p{
+    font-size: 18px;
+  }
+  .text button{
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 20px;
+    margin: 40px 0;
+    background-color: #ffbf35;
+    border: 1px solid #ffbf35;
+    width: 200px;
+    justify-self: flex-end;
+  }
+  .citi-card-img{
+    width: 40%;
+    display: inline-flex;
+    justify-content: flex-end;
+    padding-right: 80px;
+    -webkit-transform: rotate(350deg);
+    -moz-transform: rotate(350deg);
+    -ms-transform: rotate(350deg);
+    -o-transform: rotate(350deg);
+    transform: rotate(350deg);
+  }
+  .citi-card{
+    padding-top: 100px;
+    display: flex;
+  }
+  
+  .citi-card-img img{
+    height:200px
+  }
+  
+  .head-of-nation{
+    background-color: white;
+    border:none;
+    margin-top: 100px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    height:450px;
+    color: black;
+    display: flex;
+    justify-content: center;
+  }
+  .head-of-nation img{
+    height: 100%;
+  }
+  .head-of-nation-info{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .head-of-nation-info button{
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 20px;
+    margin: 40px 0px;
+    background-color: #ffbf35;
+    border: 1px solid #ffbf35;
+  }
+  .head-of-nation-info h1{
+    font-size: 36px;
+    font-weight: 400;
+  }
