@@ -1,5 +1,17 @@
-import React from "react";
+
 import "./Header.css";
+
+import React from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Pagination, Navigation } from "swiper";
 
 export default function Header() {
   return (
@@ -14,9 +26,7 @@ export default function Header() {
       </video>
 
       <div className="overlay">
-        <div className="col1"></div>
-
-        <div className="col2">
+        <div className="col">
           <div className="population">
             <h3 className="population-count">102598</h3>
             <p>POPULATION OF VINE CITY</p>
@@ -30,8 +40,31 @@ export default function Header() {
             <button className="join-button">BECOME A VINISH</button>
           </div>
         </div>
-        
-        <div className="col1"></div>
+
+        <div className="swipper-container">
+        <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        loop={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
+        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
+        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
+        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
+        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
+        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
+        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
+        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
+        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
+        </Swiper>
+        </div>
+
       </div>
     </section>
   );
