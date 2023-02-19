@@ -1,6 +1,12 @@
 .sec2{
-	background-color: #f8f8f8;
+	background-color: #ffffff;
 	color: #000000;
 	margin: 0%;
 	padding: 0px;	
+}
+
+.sec2 img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
 }

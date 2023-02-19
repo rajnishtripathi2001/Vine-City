@@ -18,22 +18,22 @@ export default function Header() {
   let slideData = [
     {
       heading: "Apple",
-      image:"asgardia.png",
+      image:"VCFlag.png",
       paragragh:"this is simple brief paragraph"
     },
     {
       heading: "Orange",
-      image:"asgardia.png",
+      image:"VCFlag.png",
       paragragh:"this is simple brief paragraph"
     },
     {
       heading: "Grapes",
-      image: "asgardia.png",
+      image: "VCFlag.png",
       paragragh: "this is simple brief paragraph"
     },
     {
       heading: "guns",
-      image: "asgardia.png",
+      image: "VCFlag.png",
       paragragh: "this is simple brief paragraph"
     },
   ]
