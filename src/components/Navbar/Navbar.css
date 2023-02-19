@@ -3,7 +3,7 @@
 .container-nav {
     background: transparent;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     overflow: hidden;
     align-items: center;
     display: flex;
@@ -25,8 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;  
-    
+    position: sticky;    
   }
   /* Add a black background color to the top navigation */
   
@@ -80,7 +79,6 @@
   .button {
       display: inline-block;
       margin: 4px 2px;
-      background-color: #444;
       font-size: 14px;
       padding-left: 32px;
       padding-right: 32px;
@@ -102,7 +100,6 @@
       -moz-transition-duration: 0.4s;
       -webkit-transition-duration: 0.4s;
       -o-transition-duration: 0.4s;
-      background-color: white;
       color: black;
   }
   
@@ -134,7 +131,6 @@
       -moz-transition-duration: 0.4s;
       -webkit-transition-duration: 0.4s;
       -o-transition-duration: 0.4s;
-      background-color: white;
       color: black;
   }
   
@@ -153,6 +149,7 @@
       -webkit-transition-duration: 0.4s;
       -o-transition-duration: 0.4s;
   }
+  
   
   .search:focus {
       width: 363px; /* Bar width+1px */

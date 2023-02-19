@@ -14,6 +14,48 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
 
 export default function Header() {
+
+  let slideData = [
+    {
+      heading: "Apple",
+      image:"asgardia.png",
+      paragragh:"this is simple brief paragraph"
+    },
+    {
+      heading: "Orange",
+      image:"asgardia.png",
+      paragragh:"this is simple brief paragraph"
+    },
+    {
+      heading: "Grapes",
+      image: "asgardia.png",
+      paragragh: "this is simple brief paragraph"
+    },
+    {
+      heading: "guns",
+      image: "asgardia.png",
+      paragragh: "this is simple brief paragraph"
+    },
+  ]
+
+  const renderslide = ()=>{
+    let renderedSlides = slideData.map((value,index)=>{
+      return(
+        <SwiperSlide>
+          <div className="slide-data">
+            <img src={value.image} alt="ftq"/>
+            <div className="slide-data-text">
+              <h5>{value.heading}</h5>
+              <p>{value.paragragh}</p>
+            </div>
+          </div> 
+        </SwiperSlide>
+      )
+    })
+    return renderedSlides
+  }
+
+
   return (
     <section className="header">
       <video
@@ -53,53 +95,8 @@ export default function Header() {
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
-      >
-        <SwiperSlide>
-          <div className="slide-data">
-            <img src="asgardia.png" alt="ftq"/>
-            <div className="slide-data-text">
-              <h5>this is heading one</h5>
-              <p>this is parra</p>
-            </div>
-          </div> 
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="slide-data">
-            <img src="asgardia.png" alt="ftq"/>
-            <div className="slide-data-text">
-              <h5>this is heading</h5>
-              <p>this is parra</p>
-            </div>
-          </div> 
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="slide-data">
-            <img src="asgardia.png" alt="ftq"/>
-            <div className="slide-data-text">
-              <h5>this is heading</h5>
-              <p>this is parra</p>
-            </div>
-          </div> 
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="slide-data">
-            <img src="asgardia.png" alt="ftq"/>
-            <div className="slide-data-text">
-              <h5>this is heading</h5>
-              <p>this is parra</p>
-            </div>
-          </div> 
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="slide-data">
-            <img src="asgardia.png" alt="ftq"/>
-            <div className="slide-data-text">
-              <h5>this is heading</h5>
-              <p>this is parra</p>
-            </div>
-          </div> 
-        </SwiperSlide>
-        
+        >
+        {renderslide()}       
         </Swiper>
         </div>
 

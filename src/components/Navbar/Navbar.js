@@ -58,18 +58,7 @@ export default function Navbar() {
         </form>
       </div>
 
-      <div className="b4571c b9f6c2">
-        en
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width="24"
-          height="24"
-          className="C1"
-        >
-          <path d="M2,8.05l2.11-2.11L12,13.84l7.89-7.89L22,8.05l-10,10L2,8.05z"></path>
-        </svg>
-      </div>
+      
     </div>
   );
 }
