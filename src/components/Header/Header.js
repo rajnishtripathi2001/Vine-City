@@ -40,11 +40,12 @@ export default function Header() {
             <button className="join-button">BECOME A VINISH</button>
           </div>
         </div>
+        
 
         <div className="swipper-container">
         <Swiper
         slidesPerView={3}
-        spaceBetween={30}
+        spaceBetween={10}
         loop={true}
         pagination={{
           clickable: true,
@@ -53,15 +54,52 @@ export default function Header() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
-        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
-        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
-        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
-        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
-        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
-        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
-        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
-        <SwiperSlide><img src="asgardia.png" alt="txt"/></SwiperSlide>
+        <SwiperSlide>
+          <div className="slide-data">
+            <img src="asgardia.png" alt="ftq"/>
+            <div className="slide-data-text">
+              <h5>this is heading one</h5>
+              <p>this is parra</p>
+            </div>
+          </div> 
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide-data">
+            <img src="asgardia.png" alt="ftq"/>
+            <div className="slide-data-text">
+              <h5>this is heading</h5>
+              <p>this is parra</p>
+            </div>
+          </div> 
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide-data">
+            <img src="asgardia.png" alt="ftq"/>
+            <div className="slide-data-text">
+              <h5>this is heading</h5>
+              <p>this is parra</p>
+            </div>
+          </div> 
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide-data">
+            <img src="asgardia.png" alt="ftq"/>
+            <div className="slide-data-text">
+              <h5>this is heading</h5>
+              <p>this is parra</p>
+            </div>
+          </div> 
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide-data">
+            <img src="asgardia.png" alt="ftq"/>
+            <div className="slide-data-text">
+              <h5>this is heading</h5>
+              <p>this is parra</p>
+            </div>
+          </div> 
+        </SwiperSlide>
+        
         </Swiper>
         </div>
 
