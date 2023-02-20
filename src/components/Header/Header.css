@@ -37,7 +37,7 @@
 .population-count{
   margin: 0;
   padding: 0;
-  color: #ffff33;
+  color: rgb(244, 166, 71);
   font-size: 2.1em;
 }
 
@@ -50,6 +50,7 @@
   font-weight: bold;
   font-size: 0.9em;
   color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px black;
 }
 
 .heading{
@@ -61,12 +62,14 @@
   font-size: 32px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 40px;
+  text-shadow: 0 0 10px black;
 }
 
 .heading p{
   font-size: 24px;
   font-family: Verdana, Geneva, Tahoma, sans-serif, Georgia, 'Times New Roman', Times, serif;
   margin: 2px 0;
+  text-shadow: 0 0 10px black;
 }
 
 .join-button-container{

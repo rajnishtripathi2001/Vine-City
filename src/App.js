@@ -1,3 +1,4 @@
+import {React,useState,useEffect} from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
@@ -12,10 +13,26 @@ import Section9 from './components/Section9/Section9';
 import Footer from './components/Footer/Footer'
 
 function App() {
+
+  const [counter, setCounter] = useState(0)
+
+  useEffect(() => {
+    let i = 0;
+    //console.log(i)
+
+    const interval=setInterval(function(){
+    i++
+    console.log(i) // setState(i)
+    setCounter(i)
+    if(i===5303){
+        clearInterval(interval)
+    }
+},10)
+  }, [])
   return (
     <div className="App">
       <Navbar/>
-      <Header/>
+      <Header counter={counter}/>
       <Section1/>
       <Section2/>
       <Section3/>
@@ -23,7 +40,7 @@ function App() {
       <Section5/>
       <Section6/>
       <Section7/>
-      <Section9/>
+      <Section9 counter={counter}/>
       <Footer/>
     </div>
   );

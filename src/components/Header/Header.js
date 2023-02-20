@@ -1,7 +1,7 @@
 
 import "./Header.css";
 
-import React from "react";
+import {React,useState,useEffect} from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
-export default function Header() {
+export default function Header({counter}) {
 
   let slideData = [
     {
@@ -70,7 +70,7 @@ export default function Header() {
       <div className="overlay">
         <div className="col">
           <div className="population">
-            <h3 className="population-count">102598</h3>
+            <h3 className="population-count">{counter}</h3>
             <p>POPULATION OF VINE CITY</p>
           </div>
           <div className="heading">
