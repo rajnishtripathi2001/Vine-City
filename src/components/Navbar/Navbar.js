@@ -10,9 +10,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
+ 
   const [navbar, setNavbar] = useState(false);
 
-  const changeBackground = () => {
+ const changeBackground = () => {
     //console.log(window.scrollY);
     if (window.scrollY >= 70) {
       setNavbar(true);
@@ -21,12 +22,12 @@ export default function Navbar() {
     }
   };
 
-  window.addEventListener("scroll", changeBackground);
+  window.addEventListener("scroll", changeBackground); 
   //{navbar ? 'container-nav active' : 'container-nav'}
   return (
     <div className={navbar ? "container-nav active" : "container-nav"}>
       
-      <div className="logo">
+      <div className="logo"> 
         <a href="#home">
           <img src="VCFlag.png" alt="logo" width="40" height="40" />
         </a>
@@ -37,10 +38,10 @@ export default function Navbar() {
       </div>
 
       <div className="topnav">
-        <a href="#About"><FontAwesomeIcon icon={faSun} />&nbsp;About</a>
-        <a href="#contact"><FontAwesomeIcon icon={faNetworkWired} />&nbsp;Social</a>
+        <a href="#about"><FontAwesomeIcon icon={faSun} />&nbsp;About</a>
+        <a href="#social"><FontAwesomeIcon icon={faNetworkWired} />&nbsp;Social</a>
         <a href="#news"><FontAwesomeIcon icon={faNewspaper} />&nbsp;News</a>
-        <a href="#about"><FontAwesomeIcon icon={faCloudMeatball} />&nbsp;Menu</a>
+        <a href="#menu"><FontAwesomeIcon icon={faCloudMeatball} />&nbsp;Menu</a>
       </div>
 
       <div className="search-container">

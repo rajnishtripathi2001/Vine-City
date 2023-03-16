@@ -1,7 +1,5 @@
-
 import "./Header.css";
-
-import {React,useState,useEffect} from "react";
+import {React} from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -55,12 +53,11 @@ export default function Header({counter}) {
     return renderedSlides
   }
 
-
   return (
     <section className="header">
       <video
-        playsinline="playsinline"
-        autoplay="autoplay"
+        playsinline="playsInline"
+        autoplay="autoPlay"
         muted="muted"
         loop="loop"
       >
