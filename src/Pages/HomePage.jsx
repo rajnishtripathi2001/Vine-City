@@ -28,7 +28,9 @@ const HomePage = () => {
   },10)
     }, [])
     return (
+      
       <div className="App">
+        
         <Navbar/>
         <Header counter={counter}/>
         <Section1/>
