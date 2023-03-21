@@ -30,7 +30,7 @@ export default function Navbar() {
     <div className={navbar ? "container-nav active" : "container-nav"}>
       
       <div className="logo"> 
-        <Link to="/home">
+        <Link to="/">
           <img src="VCFlag.png" alt="logo" width="40" height="40" />
         </Link>
         <div className="logo-text">

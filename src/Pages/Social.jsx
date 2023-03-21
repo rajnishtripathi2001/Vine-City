@@ -1,7 +1,15 @@
 import React from 'react'
+import Navbar from '../components/Navbar/Navbar'
+import Section1 from '../components/Section1/Section1'
 
 export default function Social() {
   return (
-    <div>This is social page</div>
+    <>
+    <Navbar/>
+    
+    <Section1/>
+    this is social page
+
+    </>
   )
 }
