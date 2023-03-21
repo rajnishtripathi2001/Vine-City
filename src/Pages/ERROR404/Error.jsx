@@ -1,6 +1,7 @@
 import React from "react";
 import "./Error.css";
 import PageNavBar from "../../components/PageNavBar/PageNavBar";
+import { Link } from "react-router-dom";
 
 export default function Error() {
   return (
@@ -15,8 +16,9 @@ export default function Error() {
             something is broken, report a problem.
           </p>
           <div className="btns">
-            <a href="#q">Return to Homepage</a>
-            <a href="#q">Report a Problem</a>
+            <Link to="/">Return to Homepage</Link>
+            <Link to="/report">Report a Problem</Link>
+            
           </div>
         </div>
       </div>
