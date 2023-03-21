@@ -1,23 +1,25 @@
-import {React,useState,useEffect} from 'react';
-import HomePage from './Pages/HomePage';
+import {React} from 'react';
 import './App.css';
-import Preloader from './components/Preloader/Preloader';
+import HomePage from './Pages/HomePage';
+import About from './Pages/About';
+import Menu from './Pages/Menu';
+import Social from './Pages/Social';
+import News from './Pages/News';
+import Error from './Pages/Error';
+
+import {Routes, Route } from 'react-router-dom';
+
 
 function App() {
-
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-      setLoading(true);
-      setTimeout(() => {
-      setLoading(false);
-      }, 2000);
-  }, []);
-
-  return(
-    <>
-    {loading ? (<Preloader/>):(<HomePage/>)}    
-    </>
+  return(     
+      <Routes>
+        <Route exact path='/' element={<HomePage/>}/>
+        <Route exact path='/about' element={<About/>}/>
+        <Route exact path='/menu' element={<Menu/>}/>
+        <Route exact path='/news' element={<News/>}/>
+        <Route exact path='/social' element={<Social/>}/>
+        <Route Component={<Error/>}/>
+      </Routes>     
   ) 
 }
 

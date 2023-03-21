@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,6 +9,7 @@ import {
   faNewspaper,
   faSun,
 } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Navbar() {
  
@@ -28,9 +30,9 @@ export default function Navbar() {
     <div className={navbar ? "container-nav active" : "container-nav"}>
       
       <div className="logo"> 
-        <a href="#home">
+        <Link to="/home">
           <img src="VCFlag.png" alt="logo" width="40" height="40" />
-        </a>
+        </Link>
         <div className="logo-text">
             <b>Vine City</b>
             <p>The Virtual Nation</p>
@@ -38,10 +40,11 @@ export default function Navbar() {
       </div>
 
       <div className="topnav">
-        <a href="#about"><FontAwesomeIcon icon={faSun} />&nbsp;About</a>
-        <a href="#social"><FontAwesomeIcon icon={faNetworkWired} />&nbsp;Social</a>
-        <a href="#news"><FontAwesomeIcon icon={faNewspaper} />&nbsp;News</a>
-        <a href="#menu"><FontAwesomeIcon icon={faCloudMeatball} />&nbsp;Menu</a>
+
+        <Link to="/about"><FontAwesomeIcon icon={faSun} />&nbsp;About</Link>
+        <Link to="/social"><FontAwesomeIcon icon={faNetworkWired} />&nbsp;Social</Link>
+        <Link to="/news"><FontAwesomeIcon icon={faNewspaper} />&nbsp;News</Link>
+        <Link to="/menu"><FontAwesomeIcon icon={faCloudMeatball} />&nbsp;Menu</Link>
       </div>
 
       <div className="search-container">
