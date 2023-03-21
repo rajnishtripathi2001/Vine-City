@@ -8,7 +8,6 @@ export default function News() {
     <PageNavBar/>
     <Section1/>
     this is news page
-
     </>
   )
 }

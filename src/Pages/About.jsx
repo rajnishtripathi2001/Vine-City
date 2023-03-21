@@ -6,7 +6,6 @@ export default function About() {
   return (
     <>
     <PageNavBar/>
-    
     <Section1/>
     this is about page
 

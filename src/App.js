@@ -1,4 +1,4 @@
-import { React,useEffect } from "react";
+import { React } from "react";
 import "./App.css";
 import HomePage from "./Pages/HomePage";
 import About from "./Pages/About";
@@ -6,15 +6,9 @@ import Menu from "./Pages/Menu";
 import Social from "./Pages/Social";
 import News from "./Pages/News";
 import Error from "./Pages/ERROR404/Error";
-
 import { Routes, Route } from "react-router-dom";
 
-function App() {
-
-  useEffect(() => {
-  
-  }, [])
-  
+function App() {  
   return (
     <Routes>
       <Route exact path="/" element={<HomePage />} />
