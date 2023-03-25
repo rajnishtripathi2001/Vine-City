@@ -22,7 +22,7 @@ const HomePage = () => {
       if (i === 5303) {
         clearInterval(interval);
       }
-    }, 10);
+    }, 20);
   }, []);
 
   const [loading, setLoading] = useState(false);
