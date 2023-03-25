@@ -8,6 +8,7 @@ import {
   faNetworkWired,
   faNewspaper,
   faSun,
+  faUser
 } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -45,21 +46,11 @@ export default function Navbar() {
         <Link to="/social"><FontAwesomeIcon icon={faNetworkWired} />&nbsp;Social</Link>
         <Link to="/news"><FontAwesomeIcon icon={faNewspaper} />&nbsp;News</Link>
         <Link to="/menu"><FontAwesomeIcon icon={faCloudMeatball} />&nbsp;Menu</Link>
+        
       </div>
 
-      <div className="search-container">
-        <form action="/search" method="get">
-          <input
-            className="search expandright"
-            id="searchright"
-            type="search"
-            name="q"
-            placeholder="Search"
-          />
-          <label className="button searchbutton" htmlFor="searchright">
-            <span className="mglass">&#9906;</span>
-          </label>
-        </form>
+      <div className="signin">
+      <Link to="/"><FontAwesomeIcon icon={faUser} />&nbsp;Sign In</Link>
       </div>
 
       

@@ -69,11 +69,15 @@
   
   /* -- search button code -- */
   
-  .buttonP {
-      display: block;
+  .signinP a{
+    color: rgb(27, 27, 27) ;
+    text-align: center;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-size: 17px;
   }
   
-  .buttonP:hover {
-      color: yellowgreen;
+  .signinP a:hover{
+    color: yellowgreen;
   }
   

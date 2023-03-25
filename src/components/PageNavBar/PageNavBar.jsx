@@ -8,6 +8,7 @@ import {
   faNetworkWired,
   faNewspaper,
   faSun,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -35,7 +36,9 @@ export default function PageNavBar() {
       </div>
 
       
-      <button className="buttonP">some button</button>
+      <div className="signinP">
+      <Link to="/"><FontAwesomeIcon icon={faUser} />&nbsp;Sign In</Link>
+      </div>
 
       
     </div>
