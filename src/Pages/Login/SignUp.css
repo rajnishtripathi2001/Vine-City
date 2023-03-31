@@ -1,0 +1,139 @@
+.form-wrapper{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    transform: translate(-50%,-50%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 3px 3px 2px rgb(0, 0, 0, .15);
+    padding: 32px;
+}
+
+.register h2 {
+    text-align: center;
+    color: #3e3f5e;
+    font-size: 28px;
+}
+
+.multi-inputs{
+    display: flex;
+}
+ 
+.multi-inputs .form-row{
+    margin: 0;
+    width: 100%;
+}
+
+.multi-inputs .form-row:nth-child(1){
+    margin-right: 10px;
+}
+
+form .form-row{
+    display: flex;
+    margin: 15px 0;
+    position: relative;
+}
+
+span.icon{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #6e6e6e;
+}
+
+form .form-row .placeholder{
+    background-color: #fff;
+    color: #adafca;
+    display: inline-block;
+    font-weight: 400;
+    left: 16px;
+    padding: 0 5px;
+    position: absolute;
+    pointer-events: none;
+    transform: translateY(-50%);
+    top: 50%;
+    transition: all ease 300ms;
+}
+
+form .form-row input, form .form-row button{
+    border-radius: 6px;
+    font-family: inherit;
+    padding: 15px 8px;
+    width: 100%;
+}
+
+form .form-row input{
+    font-weight: bold;
+    transition: 100ms ease all;
+    width: 100%;
+    border: 2px soild #ddd;
+}
+
+.form-row.icon-input input{
+    padding-left: 50px;
+}
+
+.form-row.icon-input .placeholder{
+    left: 50px;
+}
+
+.form-row input:valid + .placeholder{
+    top:0;
+    font-size: 15px;
+}
+
+.form-row input:invalid + .placeholder{
+    top:50%
+}
+
+.form-row input:focus + .placeholder{
+top: 0;
+left: 16px;
+}
+
+.form-row input:required{
+    box-shadow: none;
+}
+
+.form-row input:focus{
+    border-color: #0096ff;
+    outline: none;
+}
+
+.form-row input:focus:valid{
+    top: 0;
+}
+
+.term-conditons{
+    display: flex;
+    align-items: center;
+}
+
+.term-conditons input{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.form-row button{
+    background-color: #0096ff;
+    border: 2px solid #0096ff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all ease 300ms;
+    font-size: 20px;
+}
+
+.form-row button:focus{
+    border: 2px solid #46a5e8;
+    outline: none;
+}
+
+.form-row button:hover{
+    background-color: #46a5e8;
+    border-color:46a5e8;
+    transition: 0.5s;
+}

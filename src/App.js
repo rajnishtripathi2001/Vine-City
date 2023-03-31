@@ -8,6 +8,7 @@ import News from "./Pages/News/News";
 import Error from "./Pages/ERROR404/Error";
 import { Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login/Login";
+import Signup from "./Pages/Login/Signup";
 
 function App() {  
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route exact path="/news" element={<News />} />
       <Route exact path="/social" element={<Social />} />
       <Route exact path="/login" element={<Login />} />
+      <Route exact path="/signup" element={<Signup />} />
       <Route path="*" element={<Error />} />
     </Routes>
   );
