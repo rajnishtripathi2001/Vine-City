@@ -1,6 +1,6 @@
 .form-wrapper{
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     width: 400px;
     background-color: rgb(255, 255, 255);
@@ -14,7 +14,8 @@
 .register h2 {
     text-align: center;
     color: #3e3f5e;
-    font-size: 28px;
+    font-size: 25px;
+    margin-top: 0;
 }
 
 .multi-inputs{
@@ -134,6 +135,82 @@ left: 16px;
 
 .form-row button:hover{
     background-color: #46a5e8;
-    border-color:46a5e8;
-    transition: 0.5s;
+}
+
+.social-wrapper header h2{
+    background-color: #fff;
+    color: #3e3f5e;
+    font-size: 16px;
+    position: relative;
+    text-align: center;
+    z-index: 10;
+}
+
+.social-wrapper header h2::after, .social-wrapper header h2::before {
+    background-color: #d3dee2;
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 16%;
+}
+.social-wrapper header h2:after{
+    right: 0;
+}
+
+.social-wrapper header h2::before{
+    left: 0;
+}
+
+.social-wrapper ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.social-wrapper ul li{
+    margin: 8px;
+}
+
+.social-wrapper ul li a {
+    font-size: 25px;
+    align-items: center;
+    border-radius: 4px;
+    color: #fff;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    transition: all ease 300ms;
+    width: 40px;
+}
+
+.social-wrapper a.facebook{
+    background-color: #3763d2;
+}
+.social-wrapper a.twitter{
+    background-color: #1abcff;
+}
+.social-wrapper a.google{
+    background-color: #fd434f;
+}
+
+.social-wrapper ul li a{
+    transform: translateY(-4px);
+}
+
+.signinbox{
+    text-align: center;
+    font-size: 16px;
+    color: #3e3f5e;
+    font-weight: 500;
+}
+
+.signinbox a{
+    text-decoration: none;
+    color: #46a5e8;
 }

@@ -1,12 +1,11 @@
 import React from "react";
 import "./SignUp.css";
-import PageNavBar from "../../components/PageNavBar/PageNavBar";
 import { Link } from "react-router-dom";
 
 export default function Signup() {
   return (
     <>
-      <PageNavBar />
+      
       <div className="form-wrapper">
         <header className="register">
           <h2>Register</h2>
@@ -15,31 +14,37 @@ export default function Signup() {
         <form>
           <div className="multi-inputs">
             <div className="form-row">
-              <input type="text" required />
+              <input type="text" id="fname" required />
               <span className="placeholder">First Name</span>
             </div>
 
             <div className="form-row">
-              <input type="text" required />
+              <input type="text" id="lname" required />
               <span className="placeholder">Last Name</span>
             </div>
           </div>
 
           <div className="form-row icon-input">
             <span className="icon"><i className="fas fa-envelope"/></span>
-            <input type="text" required/>
+            <input type="text" id="email" required/>
             <span className="placeholder">Email</span>
           </div>
 
           <div className="form-row icon-input">
+            <span className="icon"><i className="fas fa-earth"/></span>
+            <input type="text" id="country" required/>
+            <span className="placeholder">Country</span>
+          </div>
+
+          <div className="form-row icon-input">
             <span className="icon"><i className="fas fa-user"/></span>
-            <input type="text" required/>
+            <input type="text" id="username" required/>
             <span className="placeholder">Username</span>
           </div>
 
           <div className="form-row icon-input">
             <span className="icon"><i className="fas fa-key"/></span>
-            <input type="text" required/>
+            <input type="text" id="password" required/>
             <span className="placeholder">Password</span>
           </div>
 
@@ -61,6 +66,10 @@ export default function Signup() {
                 <li><Link to="#" className="twitter"><i className="fab fa-twitter"/></Link></li>
                 <li><Link to="#" className="google"><i className="fab fa-google"/></Link></li>
              </ul>   
+        </div>
+
+        <div className="signinbox">
+            Already a Member ? <Link to="/login">Sign In</Link>
         </div>
 
         </form>
