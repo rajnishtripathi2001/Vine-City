@@ -37,7 +37,7 @@ export default function PageNavBar() {
 
       
       <div className="signinP">
-      <Link to="/"><FontAwesomeIcon icon={faUser} />&nbsp;Sign In</Link>
+      <Link to="/login"><FontAwesomeIcon icon={faUser} />&nbsp;Sign In</Link>
       </div>
 
       

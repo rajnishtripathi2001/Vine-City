@@ -50,7 +50,7 @@ export default function Navbar() {
       </div>
 
       <div className="signin">
-      <Link to="/"><FontAwesomeIcon icon={faUser} />&nbsp;Sign In</Link>
+      <Link to="/login"><FontAwesomeIcon icon={faUser} />&nbsp;Sign In</Link>
       </div>
 
       
