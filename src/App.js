@@ -9,6 +9,7 @@ import Error from "./Pages/ERROR404/Error";
 import { Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login/Login";
 import Signup from "./Pages/Login/Signup";
+import Report from "./Pages/Report Problem/Report";
 
 function App() {  
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route exact path="/social" element={<Social />} />
       <Route exact path="/login" element={<Login />} />
       <Route exact path="/signup" element={<Signup />} />
+      <Route exact path="/report" element={<Report />} />
       <Route path="*" element={<Error />} />
     </Routes>
   );
