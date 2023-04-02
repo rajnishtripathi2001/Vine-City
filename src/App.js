@@ -10,8 +10,9 @@ import { Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login/Login";
 import Signup from "./Pages/Login/Signup";
 
-function App() {  
+function App() {
   return (
+    //todo--> add sign in functionatily using database authentication
     <Routes>
       <Route exact path="/" element={<HomePage />} />
       <Route exact path="/about" element={<About />} />
