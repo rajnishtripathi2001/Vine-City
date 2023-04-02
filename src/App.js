@@ -9,7 +9,7 @@ import Error from "./Pages/ERROR404/Error";
 import { Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login/Login";
 import Signup from "./Pages/Login/Signup";
-import Report from "./Pages/Report Problem/Report";
+import Report from "./Pages/Report/Report";
 
 function App() {  
   return (

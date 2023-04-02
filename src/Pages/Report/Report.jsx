@@ -8,7 +8,7 @@ export default function Report() {
         <PageNavBar />
         <div className="reportbody">
             <h1>Report Problem</h1>
-            <form className='report-form'>
+            <form className='report-form' action="https://formsubmit.co/rajnishtripathi2001@gmail.com" method="POST">
                 <input type="text" id='name' name='name' placeholder='name' />
                 <input type="text" id='email' name='email' placeholder='email' />
                 <input type="text" id='summary' name='summary' placeholder='summary' />
