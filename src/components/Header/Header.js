@@ -15,21 +15,25 @@ export default function Header({counter}) {
 
   let slideData = [
     {
+      id:"0001",
       heading: "Apple",
       image:"VCFlag.png",
       paragragh:"this is simple brief paragraph"
     },
     {
+      id:"0002",
       heading: "Orange",
       image:"VCFlag.png",
       paragragh:"this is simple brief paragraph"
     },
     {
+      id:"0003",
       heading: "Grapes",
       image: "VCFlag.png",
       paragragh: "this is simple brief paragraph"
     },
     {
+      id:"0004",
       heading: "guns",
       image: "VCFlag.png",
       paragragh: "this is simple brief paragraph"
