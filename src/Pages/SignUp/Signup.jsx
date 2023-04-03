@@ -12,9 +12,9 @@ export default function Signup() {
       country: "",
       username: "",
       password: "",
-      category: "z",
-      VID: "z",
-      ResID: "z"
+      category: "",
+      VID: "",
+      ResID: ""
   })
   
   const handleinput=(event)=>{

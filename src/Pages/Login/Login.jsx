@@ -5,12 +5,13 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 export default function Login() {
+
+  var userList = [];
+  
   const [user, setUser] = useState({
     username: "",
     password: "",
   });
-
-  var userList = [];
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -31,17 +32,13 @@ export default function Login() {
 
     userList.forEach((element) => {
       if (user.username === element.username && user.password === element.password){
-        console.log("user matched at " + userList.indexOf(element));
+        console.log(" login successful \n user matched at " + userList.indexOf(element));
         
       } 
       else {
         console.log("user not matched");
       }
     });
-
-    console.log("login successful");
-    console.log("username : " + user.username);
-    console.log("password : " + user.password);
   };
 
   return (
