@@ -11,10 +11,10 @@ const Section7 = () => {
     await axios.get("https://vine-city-api.up.railway.app/vc/news/")
       .then((res) => {
         setData(res.data.news_list);
-      })
+     })
       .catch((error) => {
         console.log(error);
-      });
+      }); 
   }
 
   useEffect(()=>{

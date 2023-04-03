@@ -8,7 +8,7 @@ import News from "./Pages/News/News";
 import Error from "./Pages/ERROR404/Error";
 import { Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login/Login";
-import Signup from "./Pages/Login/Signup";
+import Signup from "./Pages/SignUp/Signup";
 import Report from "./Pages/Report/Report";
 
 function App() {  
