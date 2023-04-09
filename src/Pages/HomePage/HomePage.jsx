@@ -12,6 +12,7 @@ import Footer from "../../components/Footer/Footer";
 import Preloader from "../../components/Preloader/Preloader";
 
 const HomePage = () => {
+
   const [counter, setCounter] = useState(0);
 
   useEffect(() => {
@@ -51,7 +52,7 @@ const HomePage = () => {
           <Section9 counter={counter} />
           <Footer />
         </div>
-      )}
+      )} 
     </>
   );
 };

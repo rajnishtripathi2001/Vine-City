@@ -16,7 +16,7 @@ export default function Header({counter}) {
   let slideData = [
     {
       id:"0001",
-      heading: "Apple",
+      heading: "Constitution",
       image:"VCFlag.png",
       paragragh:"this is simple brief paragraph"
     },
@@ -41,7 +41,7 @@ export default function Header({counter}) {
   ]
 
   const renderslide = ()=>{
-    let renderedSlides = slideData.map((value,index)=>{
+    let renderedSlides = slideData.map((value)=>{
       return(
         <SwiperSlide>
           <div className="slide-data">

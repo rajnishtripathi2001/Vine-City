@@ -1,10 +1,12 @@
 import { React, useState } from "react";
 import "./Login.css";
 import PageNavBar from "../../components/PageNavBar/PageNavBar";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export default function Login() {
+
+  const navigate = useNavigate();
 
   var userList = [];
   
@@ -30,15 +32,21 @@ export default function Login() {
         console.log(error);
       });
 
-    userList.forEach((element) => {
-      if (user.username === element.username && user.password === element.password){
-        console.log(" login successful \n user matched at " + userList.indexOf(element));
+    for(let i = 0; i < userList.length; i++){
+      if (user.username === userList[i].username && user.password === userList[i].password){
+        console.log(" login successful \n user matched at " + userList.indexOf(userList[i]));
+        console.log(userList[i].fname + " "  +userList[i].lname)
         
-      } 
-      else {
-        console.log("user not matched");
+
+        navigate('/');
+        break;
+        
       }
-    });
+      else {
+        console.log("user not found");
+      }
+    }
+
   };
 
   return (
