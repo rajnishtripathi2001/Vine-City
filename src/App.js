@@ -10,20 +10,23 @@ import { Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login/Login";
 import Signup from "./Pages/SignUp/Signup";
 import Report from "./Pages/Report/Report";
+import Sample from "./Sample";
 
-function App() {  
+function App() {
   return (
-    <Routes>
-      <Route exact path="/" element={<HomePage />} />
-      <Route exact path="/about" element={<About />} />
-      <Route exact path="/menu" element={<Menu />} />
-      <Route exact path="/news" element={<News />} />
-      <Route exact path="/social" element={<Social />} />
-      <Route exact path="/login" element={<Login />} />
-      <Route exact path="/signup" element={<Signup />} />
-      <Route exact path="/report" element={<Report />} />
-      <Route path="*" element={<Error />} />
-    </Routes>
+    
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/menu" element={<Menu />} />
+        <Route exact path="/news" element={<News />} />
+        <Route exact path="/social" element={<Social />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/signup" element={<Signup />} />
+        <Route exact path="/report" element={<Report />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    
   );
 }
 

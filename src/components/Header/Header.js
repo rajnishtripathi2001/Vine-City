@@ -1,5 +1,5 @@
 import "./Header.css";
-import {React} from "react";
+import {React,useContext} from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,7 +11,11 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
+import UserContext from "../../context/user/UserContext";
+
 export default function Header({counter}) {
+
+  const { content } = useContext(UserContext);
 
   let slideData = [
     {
@@ -73,6 +77,7 @@ export default function Header({counter}) {
           <div className="population">
             <h3 className="population-count">{counter}</h3>
             <p>POPULATION OF VINE CITY</p>
+            <p>{content.fname}</p>
           </div>
           <div className="heading">
             <h1>The Virtual Nation</h1>

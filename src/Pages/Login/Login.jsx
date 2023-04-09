@@ -1,10 +1,13 @@
-import { React, useState } from "react";
+import { React, useContext, useState } from "react";
 import "./Login.css";
 import PageNavBar from "../../components/PageNavBar/PageNavBar";
 import { Link,useNavigate } from "react-router-dom";
 import axios from "axios";
+import UserContext from "../../context/user/UserContext";
 
 export default function Login() {
+
+  const {content,updateContent} = useContext(UserContext);
 
   const navigate = useNavigate();
 
@@ -35,9 +38,16 @@ export default function Login() {
     for(let i = 0; i < userList.length; i++){
       if (user.username === userList[i].username && user.password === userList[i].password){
         console.log(" login successful \n user matched at " + userList.indexOf(userList[i]));
-        console.log(userList[i].fname + " "  +userList[i].lname)
-        
+        //console.log(userList[i].fname + " "  +userList[i].lname)
+        console.log(content)
+        updateContent({
+          fname:userList[i].fname,
+          lname:userList[i].lname,
+          username:userList[i].username,
+          email:userList[i].email,
+        })
 
+        console.log(content)
         navigate('/');
         break;
         
