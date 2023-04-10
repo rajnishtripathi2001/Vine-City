@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useContext} from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
@@ -11,10 +11,16 @@ import {
   faUser
 } from "@fortawesome/free-solid-svg-icons";
 
+import UserContext from "../../context/user/UserContext";
+
 
 export default function Navbar() {
  
-  const [navbar, setNavbar] = useState(false);
+  const { content } = useContext(UserContext);
+
+  const isLoggedIn = content.isLoggedIn;
+
+ const [navbar, setNavbar] = useState(false);
 
  const changeBackground = () => {
     //console.log(window.scrollY);
@@ -48,10 +54,20 @@ export default function Navbar() {
         <Link to="/menu"><FontAwesomeIcon icon={faCloudMeatball} />&nbsp;Menu</Link>
         
       </div>
-
-      <div className="signin">
-      <Link to="/login"><FontAwesomeIcon icon={faUser} />&nbsp;Sign In</Link>
-      </div>
+      {isLoggedIn ? (
+        <div className="signin">
+          <Link to="/dashboard">
+            <FontAwesomeIcon icon={faUser} />
+          </Link>
+        </div>
+      ) : (
+        <div className="signin">
+          <Link to="/login">
+            <FontAwesomeIcon icon={faUser} />
+            &nbsp;Sign In
+          </Link>
+        </div>
+      )}
 
       
     </div>

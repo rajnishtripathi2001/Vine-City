@@ -1,7 +1,6 @@
-import React from "react";
+import { React, useContext } from "react";
 import "./PageNavBar.css";
 import { Link } from "react-router-dom";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCloudMeatball,
@@ -11,36 +10,58 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
+import UserContext from "../../context/user/UserContext";
 
 export default function PageNavBar() {
- 
+  const { content } = useContext(UserContext);
+
+  const isLoggedIn = content.isLoggedIn;
+
   return (
     <div className={"container-navP"}>
-      
-      <div className="logoP"> 
+      <div className="logoP">
         <Link to="/">
           <img src="VCFlag.png" alt="logo" width="40" height="40" />
         </Link>
         <div className="logo-textP">
-            <b>Vine City</b>
-            <p>The Virtual Nation</p>
+          <b>Vine City</b>
+          <p>The Virtual Nation</p>
         </div>
       </div>
 
       <div className="topnavP">
-
-        <Link to="/about"><FontAwesomeIcon icon={faSun} />&nbsp;About</Link>
-        <Link to="/social"><FontAwesomeIcon icon={faNetworkWired} />&nbsp;Social</Link>
-        <Link to="/news"><FontAwesomeIcon icon={faNewspaper} />&nbsp;News</Link>
-        <Link to="/menu"><FontAwesomeIcon icon={faCloudMeatball} />&nbsp;Menu</Link>
+        <Link to="/about">
+          <FontAwesomeIcon icon={faSun} />
+          &nbsp;About
+        </Link>
+        <Link to="/social">
+          <FontAwesomeIcon icon={faNetworkWired} />
+          &nbsp;Social
+        </Link>
+        <Link to="/news">
+          <FontAwesomeIcon icon={faNewspaper} />
+          &nbsp;News
+        </Link>
+        <Link to="/menu">
+          <FontAwesomeIcon icon={faCloudMeatball} />
+          &nbsp;Menu
+        </Link>
       </div>
 
-      
-      <div className="signinP">
-      <Link to="/login"><FontAwesomeIcon icon={faUser} />&nbsp;Sign In</Link>
-      </div>
-
-      
+      {isLoggedIn ? (
+        <div className="signinP">
+          <Link to="/dashboard">
+            <FontAwesomeIcon icon={faUser} />
+          </Link>
+        </div>
+      ) : (
+        <div className="signinP">
+          <Link to="/login">
+            <FontAwesomeIcon icon={faUser} />
+            &nbsp;Sign In
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

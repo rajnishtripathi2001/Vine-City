@@ -8,6 +8,7 @@ const UserState = ({children}) =>{
         "lname":"",
         "username":"",
         "email":"",
+        "isLoggedIn":false,
     });
 
     const updateContent = (newData) => {

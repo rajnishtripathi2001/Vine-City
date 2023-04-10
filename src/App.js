@@ -10,7 +10,7 @@ import { Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login/Login";
 import Signup from "./Pages/SignUp/Signup";
 import Report from "./Pages/Report/Report";
-import Sample from "./Sample";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/signup" element={<Signup />} />
         <Route exact path="/report" element={<Report />} />
+        <Route exact path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<Error />} />
       </Routes>
     

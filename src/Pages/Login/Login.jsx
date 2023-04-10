@@ -37,7 +37,7 @@ export default function Login() {
 
     for(let i = 0; i < userList.length; i++){
       if (user.username === userList[i].username && user.password === userList[i].password){
-        console.log(" login successful \n user matched at " + userList.indexOf(userList[i]));
+        //console.log(" login successful \n user matched at " + userList.indexOf(userList[i]));
         //console.log(userList[i].fname + " "  +userList[i].lname)
         console.log(content)
         updateContent({
@@ -45,6 +45,7 @@ export default function Login() {
           lname:userList[i].lname,
           username:userList[i].username,
           email:userList[i].email,
+          isLoggedIn:true,
         })
 
         console.log(content)
@@ -54,6 +55,7 @@ export default function Login() {
       }
       else {
         console.log("user not found");
+        alert("No Such User")
       }
     }
 
