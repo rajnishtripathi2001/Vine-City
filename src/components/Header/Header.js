@@ -83,6 +83,31 @@ export default function Header({ counter }) {
                 
               </div>
               <h2>Welcome {content.fname + " " + content.lname}</h2>
+
+              <div className="ban">
+                <h2>Discover new horizons!</h2>
+                <p>Asgardians with a resident status have more <br/> opportunities and benefits.</p>
+              </div>
+
+              <div className="button-wrapper">
+                <div className="button-flex">
+                  <button>Parliament</button>
+                  <button>Government</button>
+                  <button>Continental Office</button>
+                </div>
+                
+                <div className="button-flex">
+                  <button>Regional Office</button>
+                  <button>District Office</button>
+                  <button>Area Office</button>
+                </div>
+              </div>
+
+              <div className="main-btns-wrap">
+                <button className="colured-btn">Get Resident Status</button>
+                <button className="trans-btn">Show All Benifits</button>
+              </div>
+
               
             </>
           ) : (
