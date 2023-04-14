@@ -1,4 +1,4 @@
-import { React, useContext } from "react";
+import { React } from "react";
 import "./PageNavBar.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,12 +10,15 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
-import UserContext from "../../context/user/UserContext";
+
 
 export default function PageNavBar() {
-  const { content } = useContext(UserContext);
+  
+  var loginStatus = localStorage.getItem('loginStatus');
 
-  const isLoggedIn = content.isLoggedIn;
+  if(loginStatus === 'true'){
+    var isLoggedIn = true;
+  }
 
   return (
     <div className={"container-navP"}>

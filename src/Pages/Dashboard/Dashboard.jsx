@@ -1,28 +1,34 @@
-import { React,useContext } from "react";
+import { React } from "react";
 import "./Dashboard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faPencil} from "@fortawesome/free-solid-svg-icons";
-import UserContext from "../../context/user/UserContext";
 import { useNavigate } from "react-router-dom";
+import PageNavBar from '../../components/PageNavBar/PageNavBar'
 
 export default function Dashboard() {
   const navigate = useNavigate();
 
-  const { content, updateContent } = useContext(UserContext);
-  const isLoggedIn = content.isLoggedIn;
+  // const { content, updateContent } = useContext(UserContext);
+
+  var loginStatus = localStorage.getItem('loginStatus');
+
+  if(loginStatus === 'true'){
+    var isLoggedIn = true;
+  }
 
   const Logout = () => {
-    updateContent({
-      fname: "",
-      lname: "",
-      username: "",
-      email: "",
-      isLoggedIn: false,
-    });
+
+    localStorage.setItem("fname", '');
+    localStorage.setItem("lname", '');
+    localStorage.setItem("email", '');
+    localStorage.setItem("username", '');
+    localStorage.setItem("loginStatus", "false");
+
     navigate('/');
   };
   return (
     <>
+    <PageNavBar/>
       {isLoggedIn ? (
         <>
       <div className="dashboard-container">

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./SignUp.css";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export default function Signup() {
+
+  const navigate = useNavigate();
 
   const [post, setPost] = useState({
       fname: "",
@@ -31,6 +33,8 @@ export default function Signup() {
       .catch((error) => {
         console.log(error);
       });
+
+      navigate("/login");
   };
 
   return (

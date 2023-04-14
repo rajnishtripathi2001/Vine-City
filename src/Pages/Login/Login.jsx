@@ -1,18 +1,15 @@
-import { React, useContext, useState } from "react";
+import { React, useState } from "react";
 import "./Login.css";
 import PageNavBar from "../../components/PageNavBar/PageNavBar";
-import { Link,useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import UserContext from "../../context/user/UserContext";
 
 export default function Login() {
-
-  const {content,updateContent} = useContext(UserContext);
 
   const navigate = useNavigate();
 
   var userList = [];
-  
+
   const [user, setUser] = useState({
     username: "",
     password: "",
@@ -26,44 +23,39 @@ export default function Login() {
   const login = async (e) => {
     e.preventDefault();
 
-    await axios.get("https://vine-city-api.up.railway.app/vc/user/")
+    await axios
+      .get("https://vine-city-api.up.railway.app/vc/user/")
       .then((res) => {
-        userList = res.data.users
-        console.log(userList)
+        userList = res.data.users;
       })
       .catch((error) => {
         console.log(error);
       });
 
-    for(let i = 0; i < userList.length; i++){
-      if (user.username === userList[i].username && user.password === userList[i].password){
-        //console.log(" login successful \n user matched at " + userList.indexOf(userList[i]));
-        //console.log(userList[i].fname + " "  +userList[i].lname)
-        console.log(content)
-        updateContent({
-          fname:userList[i].fname,
-          lname:userList[i].lname,
-          username:userList[i].username,
-          email:userList[i].email,
-          isLoggedIn:true,
-        })
+    for (let i = 0; i < userList.length; i++) {
+      if (
+        user.username === userList[i].username &&
+        user.password === userList[i].password
+      ) {
 
-        console.log(content)
-        navigate('/');
+        localStorage.setItem("fname", userList[i].fname);
+        localStorage.setItem("lname", userList[i].lname);
+        localStorage.setItem("email", userList[i].email);
+        localStorage.setItem("username", userList[i].username);
+        localStorage.setItem("loginStatus", "true");
+
+        navigate("/");
         break;
-        
-      }
-      else {
-        console.log("user not found");
-        alert("No Such User")
+      } else {
+        console.log("No Such User Exist");
       }
     }
-
   };
 
   return (
     <>
       <PageNavBar />
+
       <div className="form-container">
         <h1>Login</h1>
         <form>
@@ -101,6 +93,13 @@ export default function Login() {
             Not a Vinish? <Link to="/signup">Sign Up</Link>
           </div>
         </form>
+      </div>
+      
+      <div className="test-data">
+        <center><h4>Test User</h4></center>
+        <b>Username :</b> &nbsp; testuser_01
+        <br />
+        <b>Password &nbsp;:</b> &nbsp; test1234
       </div>
     </>
   );

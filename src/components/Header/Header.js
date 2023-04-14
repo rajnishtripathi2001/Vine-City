@@ -1,5 +1,5 @@
 import "./Header.css";
-import { React, useContext } from "react";
+import { React } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,12 +11,15 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
-import UserContext from "../../context/user/UserContext";
 
 export default function Header({ counter }) {
-  const { content } = useContext(UserContext);
+  
 
-  const isLoggedIn = content.isLoggedIn;
+  var loginStatus = localStorage.getItem('loginStatus');
+
+  if(loginStatus === 'true'){
+    var isLoggedIn = true;
+  }
 
   let slideData = [
     {
@@ -82,7 +85,7 @@ export default function Header({ counter }) {
                 <p>POPULATION OF VINE CITY</p>
                 
               </div>
-              <h2>Welcome {content.fname + " " + content.lname}</h2>
+              <h2>Welcome {localStorage.getItem('fname') + " " + localStorage.getItem('lname')}</h2>
 
               <div className="ban">
                 <h2>Discover new horizons!</h2>
@@ -115,7 +118,6 @@ export default function Header({ counter }) {
               <div className="population">
                 <h3 className="population-count">{counter}</h3>
                 <p>POPULATION OF VINE CITY</p>
-                <p>{content.fname}</p>
               </div>
               <div className="heading">
                 <h1>The Virtual Nation</h1>

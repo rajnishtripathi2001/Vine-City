@@ -112,3 +112,15 @@ form .txt_field{
 .signup_link a:hover{
     text-decoration: underline;
 }
+
+.test-data{
+    width: 200px;
+    
+    background-color: whitesmoke;
+    color: rgb(68, 67, 67);
+    font-weight: 300;
+    margin-top:10%;
+    margin-left: 80%;
+    padding: 10px;
+
+}
