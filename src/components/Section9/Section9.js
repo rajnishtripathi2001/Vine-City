@@ -32,11 +32,6 @@ const Section9 = ({counter}) => {
     </div>
   
   )}
-
-
-
-
-   
   </> 
   )
 }

@@ -8,6 +8,7 @@ import {
   faNewspaper,
   faSun,
   faUser,
+  faPeopleArrows,
 } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -32,38 +33,38 @@ export default function PageNavBar() {
         </div>
       </div>
 
-      <div className="topnavP">
-        <Link to="/about">
-          <FontAwesomeIcon icon={faSun} />
-          &nbsp;About
-        </Link>
-        <Link to="/social">
-          <FontAwesomeIcon icon={faNetworkWired} />
-          &nbsp;Social
-        </Link>
-        <Link to="/news">
-          <FontAwesomeIcon icon={faNewspaper} />
-          &nbsp;News
-        </Link>
-        <Link to="/menu">
-          <FontAwesomeIcon icon={faCloudMeatball} />
-          &nbsp;Menu
-        </Link>
-      </div>
+      
 
       {isLoggedIn ? (
+        <>
+        <div className="topnavP">
+        <Link to="/about"><FontAwesomeIcon icon={faSun} />&nbsp;About</Link>
+        <Link to="/social"><FontAwesomeIcon icon={faNetworkWired} />&nbsp;Social</Link>
+        <Link to="/news"><FontAwesomeIcon icon={faNewspaper} />&nbsp;News</Link>
+        <Link to="/menu"><FontAwesomeIcon icon={faCloudMeatball} />&nbsp;Menu</Link>
+        <Link to="/community"><FontAwesomeIcon icon={faPeopleArrows}/>&nbsp;Community</Link>
+      </div>
         <div className="signinP">
           <Link to="/dashboard">
             <FontAwesomeIcon icon={faUser} />
           </Link>
         </div>
+        </>
       ) : (
+        <>
+        <div className="topnavP">
+        <Link to="/about"><FontAwesomeIcon icon={faSun} />&nbsp;About</Link>
+        <Link to="/social"><FontAwesomeIcon icon={faNetworkWired} />&nbsp;Social</Link>
+        <Link to="/news"><FontAwesomeIcon icon={faNewspaper} />&nbsp;News</Link>
+        <Link to="/menu"><FontAwesomeIcon icon={faCloudMeatball} />&nbsp;Menu</Link>
+      </div>
         <div className="signinP">
           <Link to="/login">
             <FontAwesomeIcon icon={faUser} />
             &nbsp;Sign In
           </Link>
         </div>
+        </>
       )}
     </div>
   );

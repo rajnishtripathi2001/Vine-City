@@ -7,6 +7,7 @@ import {
   faCloudMeatball,
   faNetworkWired,
   faNewspaper,
+  faPeopleArrows,
   faSun,
   faUser
 } from "@fortawesome/free-solid-svg-icons";
@@ -46,26 +47,41 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className="topnav">
+      
+      
+      {isLoggedIn ? (
+        <>
+        <div className="topnav">
+        <Link to="/about"><FontAwesomeIcon icon={faSun} />&nbsp;About</Link>
+        <Link to="/social"><FontAwesomeIcon icon={faNetworkWired} />&nbsp;Social</Link>
+        <Link to="/news"><FontAwesomeIcon icon={faNewspaper} />&nbsp;News</Link>
+        <Link to="/menu"><FontAwesomeIcon icon={faCloudMeatball} />&nbsp;Menu</Link>
+        <Link to="/community"><FontAwesomeIcon icon={faPeopleArrows}/>&nbsp;Community</Link>
+      </div>
+
+      <div className="signin">
+          <Link to="/dashboard">
+            <FontAwesomeIcon icon={faUser} />
+          </Link>
+        </div>
+        </>
+        
+      ) : (
+        <>
+        <div className="topnav">
         <Link to="/about"><FontAwesomeIcon icon={faSun} />&nbsp;About</Link>
         <Link to="/social"><FontAwesomeIcon icon={faNetworkWired} />&nbsp;Social</Link>
         <Link to="/news"><FontAwesomeIcon icon={faNewspaper} />&nbsp;News</Link>
         <Link to="/menu"><FontAwesomeIcon icon={faCloudMeatball} />&nbsp;Menu</Link>
       </div>
-      
-      {isLoggedIn ? (
-        <div className="signin">
-          <Link to="/dashboard">
-            <FontAwesomeIcon icon={faUser} />
-          </Link>
-        </div>
-      ) : (
-        <div className="signin">
+      <div className="signin">
           <Link to="/login">
             <FontAwesomeIcon icon={faUser} />
             &nbsp;Sign In
           </Link>
         </div>
+        </>
+        
       )}
 
       

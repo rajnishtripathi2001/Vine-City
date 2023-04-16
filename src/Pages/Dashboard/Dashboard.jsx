@@ -43,8 +43,8 @@ export default function Dashboard() {
             />
           </div>
 
-          <h1>User Name</h1>
-          <b>User Categeory</b>
+          <h1>{localStorage.getItem('fname')+" "+localStorage.getItem('lname')}</h1>
+          <b>Vinish</b>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
             nesciunt cupiditate laborum dolorum dolor iure, eveniet fuga
