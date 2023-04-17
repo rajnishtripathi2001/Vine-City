@@ -1,4 +1,5 @@
 import React from "react";
+import './Community.css';
 import { useNavigate } from "react-router-dom";
 
 export default function Community({ socket }) {

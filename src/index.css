@@ -20,17 +20,7 @@ code {
 }
 
 
-.home__cta {
-  width: 200px;
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #607eaa;
-  color: #f9f5eb;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-}
+/*--- CSS for Chat room ---*/
 .chat {
   width: 100%;
   height: 100vh;
@@ -38,16 +28,16 @@ code {
   align-items: center;
 }
 .chat__sidebar {
-  height: 100%;
+  height: 94.99vh;
   background-color: #f9f5eb;
-  flex: 0.2;
+  width: 20%;
   padding: 20px;
   border-right: 1px solid #fdfdfd;
   
 }
 .chat__main {
-  height: 100%;
-  flex: 0.8;
+  height: 100vh;
+  width: 74.7%;
 }
 .chat__header {
   margin: 30px 0 20px 0;
@@ -65,7 +55,7 @@ code {
 }
 .chat__mainHeader {
   width: 100%;
-  height: 10vh;
+  height: 5vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -84,7 +74,7 @@ code {
 }
 .message__container {
   width: 100%;
-  height: 80vh;
+  height: 74vh;
   background-color: #fff;
   padding: 20px;
   overflow-y: scroll;
@@ -96,22 +86,27 @@ code {
 .chat__footer {
   padding: 10px;
   background-color: #f9f5eb;
-  height: 10vh;
-}
-.form {
-  width: 100%;
-  height: 100%;
+  height: 8vh;
+  width: 75.19vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+.formChat {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .message {
-  width: 85%;
-  height: 100%;
+  width: 80%;
+  height: 150%;
   border-radius: 10px;
   border: 1px solid #ddd;
   outline: none;
   padding: 15px;
+
+  overflow-y: hidden;
 }
 .sendBtn {
   width: 150px;
@@ -121,7 +116,6 @@ code {
   outline: none;
   color: #eae3d2;
   cursor: pointer;
-  margin-right: 1%;
   border-radius: 25px;
 }
 .sendBtn:hover {
@@ -129,18 +123,27 @@ code {
 }
 .message__recipient {
   background-color: #f5ccc2;
-  width: 300px;
+  width: 350px;
   padding: 10px;
   border-radius: 10px;
   font-size: 15px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  
 }
 .message__sender {
   background-color: rgb(194, 243, 194);
-  max-width: 300px;
+  max-width: 350px;
   padding: 10px;
   border-radius: 10px;
   margin-left: auto;
   font-size: 15px;
+  
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  
 }
 .message__chats > p {
   font-size: 13px;

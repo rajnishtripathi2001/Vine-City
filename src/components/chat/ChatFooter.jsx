@@ -20,8 +20,9 @@ const ChatFooter = ({ socket }) => {
   };
   return (
     <div className="chat__footer">
-      <form className="form" onSubmit={handleSendMessage}>
-        <input
+      <form className="formChat" onSubmit={handleSendMessage}>
+        <textarea
+          rows="5"
           type="text"
           placeholder="Write message"
           className="message"
@@ -36,3 +37,5 @@ const ChatFooter = ({ socket }) => {
 };
 
 export default ChatFooter;
+
+
