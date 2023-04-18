@@ -1,6 +1,8 @@
 import React from "react";
 import './Community.css';
 import { useNavigate } from "react-router-dom";
+import PageNavBar from "../../components/PageNavBar/PageNavBar"
+import Footer from "../../components/Footer/Footer"
 
 export default function Community({ socket }) {
   const navigate = useNavigate();
@@ -23,11 +25,15 @@ export default function Community({ socket }) {
     <>
       {isLoggedIn ? (
         <>
+        <PageNavBar/>
+          <div className="community-page">
           Community page
           <br />
           <button className="home__cta" onClick={handleSubmit}>
             Join Public Chat Room
           </button>
+          </div>
+        <Footer/>
         </>
       ) : (
         <>

@@ -1,5 +1,6 @@
-.news-body{
-    background-color: whitesmoke;
-    width: 100%;
-    margin-top: 4%;
+.news-body {
+  margin-top: 60px;
+  background-color: whitesmoke;
+  padding: 2%;
+  height: 85vh;
 }

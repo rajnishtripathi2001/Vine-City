@@ -1,15 +1,17 @@
 import React from 'react'
 import './Social.css'
 import PageNavBar from '../../components/PageNavBar/PageNavBar'
+import Footer from '../../components/Footer/Footer'
 
 
 export default function Social() {
   return (
-    <div className='social-body'>
+    <>
     <PageNavBar/>
+    <div className='social-body'>
     this is social page
-    <br />
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos atque possimus veniam ipsum maiores, reiciendis cupiditate obcaecati, assumenda quam neque ratione soluta. Velit enim odio beatae.
     </div>
+    <Footer/>
+    </>
   )
 }
