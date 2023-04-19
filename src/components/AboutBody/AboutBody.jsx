@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutBody.css";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 export default function AboutBody() {
   return (
     <div className="aboutBody">
@@ -14,6 +15,14 @@ export default function AboutBody() {
           <li>Inclusivity and Diversity</li>
           <li>Join Vine City Today</li>
         </ul>
+        <br />
+        <a
+          href="Vine-City-Planning-Report.pdf"
+          download="Vine-City-Planning-Report.pdf"
+        >
+          <FontAwesomeIcon icon={faDownload} />&nbsp;
+          Download Planning Report
+        </a>
       </div>
 
       <div className="right-container">
@@ -88,12 +97,10 @@ export default function AboutBody() {
             connect with like-minded individuals from around the world. Sign up
             now and become a Vinish.
           </p>
-
         </div>
         <div className="btns-container">
           <button>Join Today</button>
           <button>Get Official Document</button>
-          
         </div>
       </div>
     </div>

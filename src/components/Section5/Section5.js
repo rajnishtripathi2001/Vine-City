@@ -18,7 +18,7 @@ const Section5 = () => {
         <div className='head-of-nation'>
           <div className='head-of-nation-info'>
             <h1>"Whatever I write <br /> on a piece of paper <br /> is Law."</h1>
-            <p>Head of Vine City(General of the militia),Rajnish Tripathi</p>
+            <p><b>Head of Vine City - Rajnish Tripathi</b></p>
             <div>
               <button>BECOME AN VINISH</button>
               <button style={{backgroundColor:"#D3D3D3",border:"1px solid #D3D3D3",marginLeft:"20px"}}>ABOUT HEAD OF NATION</button>

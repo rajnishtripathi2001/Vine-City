@@ -26,25 +26,25 @@ export default function Header({ counter }) {
       id: "0001",
       heading: "Constitution",
       image: "VCFlag.png",
-      paragragh: "this is simple brief paragraph",
+      paragragh: "Read the Constitution of Vine City",
     },
     {
       id: "0002",
-      heading: "Orange",
+      heading: "Head of the Nation",
       image: "VCFlag.png",
-      paragragh: "this is simple brief paragraph",
+      paragragh: "Rajnish Tripathi Head of the Nation",
     },
     {
       id: "0003",
-      heading: "Grapes",
+      heading: "Vine City",
       image: "VCFlag.png",
-      paragragh: "this is simple brief paragraph",
+      paragragh: "Download the Official Documentation",
     },
     {
       id: "0004",
-      heading: "guns",
+      heading: "Parliamentary Elections",
       image: "VCFlag.png",
-      paragragh: "this is simple brief paragraph",
+      paragragh: "Learn more about upcoming elections",
     },
   ];
 

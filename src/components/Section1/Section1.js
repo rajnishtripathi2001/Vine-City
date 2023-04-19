@@ -5,7 +5,7 @@ export default function Section1() {
   return (
     <section className="sec1">
       <h1 style={{ fontSize: 47, textAlign: "center", padding: "50px" }}>
-        <b>Vine City Founding Day Documentary</b>
+        <b>Vine City Documentary</b>
       </h1>
       <video
         width="910"
