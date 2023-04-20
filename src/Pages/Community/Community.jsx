@@ -1,8 +1,8 @@
 import React from "react";
-import './Community.css';
+import "./Community.css";
 import { useNavigate } from "react-router-dom";
-import PageNavBar from "../../components/PageNavBar/PageNavBar"
-import Footer from "../../components/Footer/Footer"
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 export default function Community({ socket }) {
   const navigate = useNavigate();
@@ -25,15 +25,25 @@ export default function Community({ socket }) {
     <>
       {isLoggedIn ? (
         <>
-        <PageNavBar/>
+          <Navbar />
           <div className="community-page">
-          Community page
-          <br />
-          <button className="home__cta" onClick={handleSubmit}>
-            Join Public Chat Room
-          </button>
+            <div className="leftbox">
+              <div className="leftbox-conatainer">
+                <h1>Join The Public Chat</h1>
+                <button className="home__cta" onClick={handleSubmit}>
+                  Join Public Chat Room
+                </button>
+              </div>
+            </div>
+
+            <div className="rightbox">
+              <div className="rightbox-container">
+                "Community is much more than belonging to something; its about
+                doing something together that makes belonging matter"
+              </div>
+            </div>
           </div>
-        <Footer/>
+          <Footer />
         </>
       ) : (
         <>

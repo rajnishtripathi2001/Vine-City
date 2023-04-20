@@ -1,3 +1,27 @@
+.community-page{
+  background-color: #3D5FA0;
+  height: 100vh;
+  display: flex;
+}
+
+.leftbox{
+  background: transparent;
+  width: 50%;
+}
+
+.leftbox-conatainer{
+  background-color: whitesmoke;
+  width: 50%;
+  margin-top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+}
+
 .home__cta {
   width: 200px;
   padding: 10px;
@@ -8,11 +32,27 @@
   outline: none;
   border: none;
   border-radius: 5px;
+  margin-top:  50px;
 }
 
-.community-page{
-  margin-top:60px;
+
+/*----- Right Box from here------*/
+
+.rightbox{
+  background: rgb(222, 96, 24);
+  width: 50%;
+}
+
+.rightbox-container{
   background-color: whitesmoke;
+  width: 50%;
+  margin-top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%,-50%);
   padding: 2%;
-  height: 85vh;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 35px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
 }
