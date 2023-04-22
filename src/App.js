@@ -16,7 +16,7 @@ import Community from "./Pages/Community/Community"
 import ChatPage from "./components/chat/ChatPage"
 
 
-const socket = io('https://vc-chat-app-backend-production.up.railway.app/');
+const socket = io('rightful-stomach-production.up.railway.app');
 
 function App() {
 
