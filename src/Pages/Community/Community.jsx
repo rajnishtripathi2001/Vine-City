@@ -27,7 +27,7 @@ export default function Community({ socket }) {
         <>
           <Navbar />
           <div className="community-page">
-            <img src="community.png" alt="com" />
+            <img src="Community.jpg" alt="com-pic" />
             <div className="overlay-community">
               <div className="quote-container">
                 "Community is much more than belonging to something; its about
