@@ -1,58 +1,52 @@
 .community-page{
   background-color: #3D5FA0;
   height: 100vh;
-  display: flex;
+}
+.community-page img{
+  width: 100%;
+  height: 100%;
 }
 
-.leftbox{
-  background: transparent;
-  width: 50%;
-}
-
-.leftbox-conatainer{
-  background-color: whitesmoke;
-  width: 50%;
-  margin-top: 50%;
-  margin-left: 50%;
-  transform: translate(-50%,-50%);
-  padding: 2%;
+.overlay-community {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  margin: 9% 0 0 0; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 12px;
 }
 
-.home__cta {
-  width: 200px;
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #607eaa;
-  color: #f9f5eb;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  margin-top:  50px;
-}
-
-
-/*----- Right Box from here------*/
-
-.rightbox{
-  background: rgb(222, 96, 24);
-  width: 50%;
-}
-
-.rightbox-container{
-  background-color: whitesmoke;
-  width: 50%;
-  margin-top: 50%;
-  margin-left: 50%;
-  transform: translate(-50%,-50%);
+.quote-container{
+  background-color: rgb(135, 81, 192);
+  width: 40%;
   padding: 2%;
   text-align: center;
   border-radius: 12px;
   font-size: 35px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 500;
+  margin-bottom: 5%;
 }
+
+.comm-btns-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+}
+
+.home__cta {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #607eaa;
+  color: #f9f5eb;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+

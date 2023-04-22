@@ -27,21 +27,36 @@ export default function Community({ socket }) {
         <>
           <Navbar />
           <div className="community-page">
-            <div className="leftbox">
-              <div className="leftbox-conatainer">
-                <h1>Join The Public Chat</h1>
-                <button className="home__cta" onClick={handleSubmit}>
-                  Join Public Chat Room
-                </button>
-              </div>
-            </div>
-
-            <div className="rightbox">
-              <div className="rightbox-container">
+            <img src="community.png" alt="com" />
+            <div className="overlay-community">
+              <div className="quote-container">
                 "Community is much more than belonging to something; its about
                 doing something together that makes belonging matter"
               </div>
+
+              <div className="comm-btns-container">
+              <button className="home__cta" onClick={handleSubmit}>
+                Join Public Chat Room
+              </button>
+              <button className="home__cta">
+                Join Public Chat Room 2
+              </button>
+              <button className="home__cta">
+                Join Public Chat Room 3
+              </button>
+              <button className="home__cta">
+                Join Public Chat Room 4
+              </button>
+              <button className="home__cta">
+                Join Public Chat Room 4
+              </button>
+              <button className="home__cta">
+                Join Public Chat Room 4
+              </button>
+              </div>
+              
             </div>
+
           </div>
           <Footer />
         </>
