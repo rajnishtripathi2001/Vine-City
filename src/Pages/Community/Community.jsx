@@ -39,19 +39,19 @@ export default function Community({ socket }) {
                 Join Public Chat Room
               </button>
               <button className="home__cta">
-                Join Public Chat Room 2
+                Our Work
               </button>
               <button className="home__cta">
-                Join Public Chat Room 3
+                Out Core Values
               </button>
               <button className="home__cta">
-                Join Public Chat Room 4
+                Upcoming Event
               </button>
               <button className="home__cta">
-                Join Public Chat Room 4
+                Founding Fathers
               </button>
               <button className="home__cta">
-                Join Public Chat Room 4
+                Founder 
               </button>
               </div>
               
