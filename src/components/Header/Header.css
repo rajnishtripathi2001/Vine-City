@@ -1,15 +1,10 @@
-/*--------- Header CSS ---------------*/
-
 .header {
-  margin: 0;
-  padding: 0;
   font-family: Arial;
   color: white;
   width: 100%;
-  height: auto;
   background-color: black;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .header video {
@@ -23,16 +18,19 @@
   top: 0;
   z-index: 1;
   width: 100%;
-  margin: 9% 0 0 0; 
+  margin-top: 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .col {
   width: 66%;
-  margin-left: 17%;
   text-align: center;
 }
 
-.col h2{
+.col h2 {
   margin: 0;
   padding: 0;
   color: rgb(244, 166, 71);
@@ -40,7 +38,7 @@
   font-size: 2em;
 }
 
-.ban h2{
+.ban h2 {
   margin: 2%;
   color: whitesmoke;
   font-size: 3.5em;
@@ -48,7 +46,7 @@
   text-shadow: 0 0 5px black;
 }
 
-.ban p{
+.ban p {
   margin-top: 8%;
   color: whitesmoke;
   font-size: 1.4em;
@@ -56,20 +54,19 @@
   text-shadow: 0 0 5px black;
 }
 
-.button-wrapper{
+.button-wrapper {
   display: flex;
   flex-direction: column;
-  align-items:center ;
+  align-items: center;
 }
 
-.button-flex{
+.button-flex {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
-  
 }
 
-.button-flex button{
+.button-flex button {
   margin: 1%;
   border-radius: 25px;
   border: 1px dashed;
@@ -82,14 +79,14 @@
   height: 45px;
 }
 
-.main-btns-wrap{
+.main-btns-wrap {
   display: flex;
   justify-content: center;
   padding: 2%;
   height: 55px;
 }
 
-.colured-btn{
+.colured-btn {
   margin: 1%;
   border-radius: 25px;
   border: none;
@@ -102,7 +99,7 @@
   padding: 1%;
 }
 
-.trans-btn{
+.trans-btn {
   margin: 1%;
   border-radius: 25px;
   border: 1px solid whitesmoke;
@@ -115,11 +112,11 @@
   padding: 1%;
 }
 
-.population{
-  padding: 2% 0 1% 0 ;
+.population {
+  padding: 2% 0 1% 0;
 }
 
-.population-count{
+.population-count {
   margin: 0;
   padding: 0;
   color: rgb(244, 166, 71);
@@ -127,11 +124,11 @@
   text-shadow: 0 0 5px black;
 }
 
-.population-count:hover{
+.population-count:hover {
   text-decoration: underline;
 }
 
-.population p{
+.population p {
   font-size: large;
   font-weight: bold;
   font-size: 0.9em;
@@ -139,56 +136,49 @@
   text-shadow: 0 0 5px black;
 }
 
-.heading{
+.heading {
   margin: 0;
-  padding: 2% 0 1% 0 ;
+  padding: 2% 0 1% 0;
 }
 
-.heading h1{
+.heading h1 {
   font-size: 32px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
   text-shadow: 0 0 10px black;
 }
 
-.heading p{
+.heading p {
   font-size: 24px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif, Georgia, 'Times New Roman', Times, serif;
-  margin: 2px 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Georgia, "Times New Roman",
+    Times, serif;
+  margin: 0 0;
   text-shadow: 0 0 10px black;
 }
 
-.join-button-container{
-  padding: 2% 0 1% 0 ;
+.join-button-container {
+  padding: 2% 0 1% 0;
 }
 
-.join-button{
+.join-button {
   font-weight: 700;
   padding: 12px 24px;
   border-radius: 20px;
-  margin: 50px 0;
+  margin: 20px 0;
   background-color: #ffbf35;
   border: 1px solid #ffbf35;
   width: 200px;
 }
 
-@media only screen and (max-width: 627px) {
-  .overlay {
-    width: 100vh;  
-  }
-  .col {
-    width: 80%;
-    margin: 10% 0 0 10%;
-  }
-}
-
 /*---- Slidebar CSS---*/
-.swipper-container{
+
+.swipper-container {
   height: 210px;
+  width: 90%;
 }
 
 .swiper {
-  width: 70%;
+  width: 90%;
   height: 100px;
 }
 
@@ -202,14 +192,47 @@
   background-color: rgba(9, 67, 121, 0.5);
   border-radius: 12px;
 }
-.swiper-slide:hover{
+.swiper-slide:hover {
   background-color: rgba(51, 98, 142, 1);
 }
 
+.slide-data {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
-.swiper {
-  margin-left: auto;
-  margin-right: auto;
+.slide-data img {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+}
+
+.slide-data h5 {
+  color: #ffbf35;
+  margin-bottom: 2px;
+}
+
+.slide-data-text {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.slide-data-text p {
+  font-size: 16px;
+}
+
+/* @media only screen and (max-width: 627px) {
+  .overlay {
+    width: 100vh;  
+  }
+  .col {
+    width: 80%;
+    margin: 10% 0 0 10%;
+  }
 }
 
 @media (max-width: 1133px) 
@@ -217,34 +240,21 @@
   .swipper-container{
     display: none;
   }
-}
+} */
 
-.slide-data{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+@media screen and (min-width: 1024px) {
+  .col {
+    
+    margin-bottom: 3%;
+  }
+
+  
+
   
 }
 
-.slide-data img{
-  height: 55px;
-  width: 55px;
-  border-radius: 50%;
-}
-
-.slide-data h5{
-  color: #ffbf35;
-  margin-bottom: 2px;
-}
-
-.slide-data-text{
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-}
-
-.slide-data-text p{
-  font-size: 16px;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .swipper-container {
+    display: none;
+  }
 }
