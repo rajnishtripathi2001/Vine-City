@@ -1,5 +1,3 @@
-/*========== Navibar CSS ========================*/
-
 .container-nav {
   background: transparent;
   display: flex;
@@ -8,99 +6,111 @@
   align-items: center;
   display: flex;
   margin: 0 auto;
-  width: 100%; 
+  width: 100%;
   position: fixed;
-  top: 20px;  /* change to 0 when scroll up*/
+  top: 20px;
   left: 0;
   z-index: 99;
 }
 
-.container-nav.active{
-  background: linear-gradient(90deg, rgb(66,2,194) 0%, rgb(0,78,194) 100%);
+.container-nav.active {
+  background: linear-gradient(90deg, rgb(66, 2, 194) 0%, rgb(0, 78, 194) 100%);
   top: 0;
 }
 
-
-.topnav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: sticky;    
-}
-/* Add a black background color to the top navigation */
-
-.logo{
+.logo {
   display: flex;
   align-items: center;
 }
 
-.logo img{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+.topnav {
+  display: flex;
+  justify-content: space-between;
 }
 
-.logo-text{
-  color: white;
-  margin-left:15px ; 
-  height: fit-content;  
-  width: 200px; 
-}
-
-.logo-text b{
-  font-size: 26px;
-  margin: 0;
-}
-
-.logo-text p{
-  font-size: 16px;
-  margin: 2px 0 ;
-}
-
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   color: rgb(255, 255, 255);
   text-align: center;
-  padding: 10px 50px;
   text-decoration: none;
-  font-size: 17px;
 }
 
-/* Change the color of links on hover */
+.signin a {
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+  text-decoration: none;
+}
+
 .container-nav .topnav a:hover {
   color: rgb(27, 27, 27);
 }
 
-.signin a{
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 10px 50px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.signin a:hover{
+.signin a:hover {
   color: rgb(27, 27, 27);
 }
 
+@media screen and (min-width: 1024px) {
+  .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
 
+  .logo-text {
+    color: white;
+    margin-left: 15px;
+    height: fit-content;
+  }
 
-@media (max-width:375px) {
-  .container-nav {
-    /* background: transparent;
-    display: flex;
-    justify-content: space-evenly;
-    overflow: hidden;
-    align-items: center;
-    display: flex;
-    margin: 0 auto;
-    width: 100%; 
-    position: fixed;
-    top: 20px;  
-    left: 0;
-    z-index: 99; */
-    background: linear-gradient(90deg, rgb(66,2,194) 0%, rgb(0,78,194) 100%);
-    top: 0;
+  .logo-text b {
+    font-size: 26px;
+  }
+
+  .logo-text p {
+    font-size: 16px;
+    margin: 2px 0;
+  }
+
+  .topnav a {
+    padding: 10px 35px;
+    font-size: 17px;
+  }
+
+  .signin a {
+    padding: 10px 50px;
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .logo-text {
+    color: white;
+    margin-left: 10px;
+    height: fit-content;
+  }
+
+  .logo-text b {
+    font-size: 18px;
+  }
+
+  .logo-text p {
+    font-size: 10px;
+    margin: 2px 0;
+  }
+
+  .topnav a {
+    padding: 5px 25px;
+    font-size: 10px;
+  }
+
+  .signin a {
+    padding: 10px 30px;
+    font-size: 10px;
   }
 }

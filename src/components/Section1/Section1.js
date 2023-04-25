@@ -16,7 +16,9 @@ export default function Section1() {
         autoplay="autoPlay"
         muted="muted"
         loop="loop"
+        className="sec1-video"
       >
+
         <source src="/VC_Brand.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>

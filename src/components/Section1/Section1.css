@@ -5,3 +5,12 @@
 	padding: 0px;
 	width: 100%;
 }
+
+.sec1-video{
+	width: 50%;
+	height: 80%;
+}
+
+@media screen and (max-width: 1290px){
+
+}
