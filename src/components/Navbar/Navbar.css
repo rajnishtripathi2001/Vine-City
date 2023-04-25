@@ -83,3 +83,24 @@
 .signin a:hover{
   color: rgb(27, 27, 27);
 }
+
+
+
+@media (max-width:375px) {
+  .container-nav {
+    /* background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    width: 100%; 
+    position: fixed;
+    top: 20px;  
+    left: 0;
+    z-index: 99; */
+    background: linear-gradient(90deg, rgb(66,2,194) 0%, rgb(0,78,194) 100%);
+    top: 0;
+  }
+}

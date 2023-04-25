@@ -212,7 +212,7 @@
   margin-right: auto;
 }
 
-@media (max-width: 1000px) 
+@media (max-width: 1133px) 
 {
   .swipper-container{
     display: none;
