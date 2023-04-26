@@ -13,7 +13,7 @@ import {
 
 export default function Navbar() {
 
-
+  
 
 
   var loginStatus = localStorage.getItem("loginStatus");
@@ -106,6 +106,8 @@ export default function Navbar() {
           </div>
         </>
       )}
+
+     
     </div>
   );
 }

@@ -1,9 +1,8 @@
 .sec1{
 	background-color: #2e3645;
 	color: #f8f8f8;
-	margin: 0%;
-	padding: 0px;
 	width: 100%;
+	margin-top: -50px;
 }
 
 .sec1-video{
@@ -11,6 +10,6 @@
 	height: 80%;
 }
 
-@media screen and (max-width: 1290px){
+@media screen and (max-width: 1024px){
 
 }

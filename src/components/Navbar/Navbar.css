@@ -1,11 +1,12 @@
 .container-nav {
   background: transparent;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   overflow: hidden;
   align-items: center;
   display: flex;
-  margin: 0 auto;
+  margin: 0 ;
+  padding: 1%;
   width: 100%;
   position: fixed;
   top: 20px;
@@ -49,6 +50,7 @@
 .signin a:hover {
   color: rgb(27, 27, 27);
 }
+
 
 @media screen and (min-width: 1024px) {
   .logo img {
@@ -113,4 +115,37 @@
     padding: 10px 30px;
     font-size: 10px;
   }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+  .container-nav{
+    position: fixed;
+    top: 0;
+    background: linear-gradient(90deg, rgb(66, 2, 194) 0%, rgb(0, 78, 194) 100%);
+  }
+  
+  .logo img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+
+  .logo-text {
+    color: white;
+    margin: -5px 12px;
+    height: fit-content;
+  }
+
+  .logo-text b {
+    font-size: 14px;
+  }
+
+  .logo-text p {
+    font-size: 8px;
+    margin: 2px 0;
+  }
+
+  /* .topnav, .signin{
+    display: none;
+  } */
 }

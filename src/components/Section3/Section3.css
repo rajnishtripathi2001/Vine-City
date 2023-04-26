@@ -8,13 +8,9 @@
 	flex-direction: column;
 	width: 100%;
 }
-h1{
-	margin: 0%;
-	padding: 0%;
- }
 
 .container{
-	width: 1150px;
+	width: 100%;
 	margin: 0px auto 0;
 	display: table;
 	box-sizing: border-box;
@@ -28,29 +24,13 @@ h1{
 	background: #2e3645;
 	display: table-cell;
 	padding: 10px;
-	width: 33.33333%;
+	width: 33.33%;
 	border-right: 10px solid #2e3645;
 	border-left: 10px solid #2e3645;
 	text-align: left;
 }
 
-@media (max-width: 1000px){
-	.container{
-		margin: 0;
-		padding: 10px;
-		width: 100%;
-	}
-	.column{
-		width: 100%;
-		display: block;
-		margin: 10px 0;
-		border: none;
-		box-sizing: border-box;
-	}
-	.row{
-		margin: 0;
-	}
-}
+
 
 .bttnq {
 	width: 200px;
@@ -102,4 +82,22 @@ h1{
 
 h3{
 	margin: 30px;
+}
+
+@media (max-width: 1000px){
+	.container{
+		margin: 0;
+		padding: 10px;
+		width: 100%;
+	}
+	.column{
+		width: 100%;
+		display: block;
+		margin: 10px 0;
+		border: none;
+		box-sizing: border-box;
+	}
+	.row{
+		margin: 0;
+	}
 }
