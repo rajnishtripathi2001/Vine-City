@@ -9,7 +9,7 @@
   padding: 1%;
   width: 100%;
   position: fixed;
-  top: 20px;
+  top: 10px;
   left: 0;
   z-index: 99;
 }
@@ -17,6 +17,10 @@
 .container-nav.active {
   background: linear-gradient(90deg, rgb(66, 2, 194) 0%, rgb(0, 78, 194) 100%);
   top: 0;
+}
+
+.nav-container{
+  display: block;
 }
 
 .logo {
@@ -61,12 +65,11 @@
 
   .logo-text {
     color: white;
-    margin-left: 15px;
-    height: fit-content;
+    margin: 0 15px;
   }
 
   .logo-text b {
-    font-size: 26px;
+    font-size: 25px;
   }
 
   .logo-text p {
