@@ -67,8 +67,7 @@
   text-align: center;
 }
 
-.topnav li,
-a {
+.topnav a,li {
   text-decoration: none;
   list-style: none;
   color: whitesmoke;
