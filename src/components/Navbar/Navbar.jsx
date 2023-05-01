@@ -38,8 +38,6 @@ export default function Navbar() {
     setShowMenu(!showMenu);
   };
 
-
-
   return (
     <div className={navbar ? "container-nav active" : "container-nav"}>
       <div className="logo">

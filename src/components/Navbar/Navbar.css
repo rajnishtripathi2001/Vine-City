@@ -74,6 +74,10 @@ a {
   color: whitesmoke;
 }
 
+.topnav a:hover {
+  color: #000;
+}
+
 .hamburger-menu {
   grid-column: 4/5;
   display: none;

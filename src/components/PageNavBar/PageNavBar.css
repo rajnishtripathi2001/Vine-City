@@ -1,83 +1,161 @@
-/*========== Navibar CSS ========================*/
-
 .container-navP {
-    background: white;
-    display: flex;
-    justify-content: space-evenly;
-    overflow: hidden;
-    align-items: center;
-    display: flex;
-    margin: 0 auto;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5rem 1fr 2fr 1fr 5rem;
+  background: white;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logoP {
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoP img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logo-textP {
+  color: black;
+  margin: 0 15px;
+}
+
+.logo-textP b {
+  font-size: 25px;
+}
+
+.logo-textP p {
+  font-size: 15px;
+  margin: 2px 0;
+}
+
+.topnavP {
+  grid-column: 3/5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+}
+
+.navbarP {
+  width: 60%;
+  grid-column: 3/4;
+}
+
+.navbarP ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.signinP {
+  grid-column: 4/5;
+  text-align: center;
+}
+
+.topnavP li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+.topnavP a:hover {
+  color: yellowgreen;
+}
+
+.hamburger-menuP {
+  grid-column: 4/5;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container-navP {
+    grid-template-columns: 1rem 3fr 1fr 3fr 1rem;
+    height: 3rem;
   }
-  
-  .topnavP{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;    
+
+  .logoP {
+    grid-column: 2/3;
+    justify-content: start;
+    margin-left: 5vw;
   }
-  /* Add a black background color to the top navigation */
-  
-  .logoP{
-    display: flex;
-    align-items: center;
-  }
-  
-  .logoP img{
-    width: 50px;
-    height: 50px;
+
+  .logoP img {
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
   }
-  
-  .logo-textP{
+
+  .logo-textP {
     color: black;
-    margin-left:15px ; 
-    height: fit-content;  
-    width: 200px; 
+    margin: 0 15px;
   }
-  
-  .logo-textP b{
-    font-size: 26px;
-    margin: 0;
+
+  .logo-textP b {
+    font-size: 20px;
   }
-  
-  .logo-textP p{
-    font-size: 16px;
-    margin: 2px 0 ;
+
+  .logo-textP p {
+    font-size: 10px;
+    margin: 2px 0;
   }
-  
-  /* Style the links inside the navigation bar */
-  .topnavP a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 10px 50px;
-    text-decoration: none;
-    font-size: 17px;
+
+  .topnavP {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 3rem;
+    right: -500px;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(55, 45, 45);
+    padding: 40px 0 0 10px;
+    transition: 0.5s ease-in-out;
   }
-  
-  /* Change the color of links on hover */
-  .container-navP .topnavP a:hover {
-    color: yellowgreen;
+
+  .topnavP.activeP {
+    right: 0;
+    z-index: 90;
   }
-  
-  /* -- search button code -- */
-  
-  .signinP a{
-    color: rgb(27, 27, 27) ;
-    text-align: center;
-    padding: 10px 50px;
-    text-decoration: none;
-    font-size: 17px;
+
+  .navbarP ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-transform: uppercase;
+    margin-bottom: 30%;
   }
-  
-  .signinP a:hover{
-    color: yellowgreen;
+
+  .navbarP li {
+    margin-bottom: 10%;
   }
-  
+
+  .signinP {
+    margin: 0 0 0 40px;
+  }
+
+  .hamburger-menuP {
+    display: block;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 0;
+    font-size: 1.5rem;
+    grid-row: 1/2;
+  }
+}
