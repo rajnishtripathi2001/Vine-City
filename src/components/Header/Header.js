@@ -59,6 +59,7 @@ export default function Header({ counter }) {
     return renderedSlides;
   };
 
+
   return (
     <section className="header">
       <video
