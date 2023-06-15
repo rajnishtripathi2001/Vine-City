@@ -1,20 +1,120 @@
-.sec-5{
-    background-color: #2e3645;
-    color: whitesmoke;
-    width: 100%;
+.sec-5 {
+  background-color: #2e3645;
+  color: whitesmoke;
+  width: 100%;
+}
+
+.citi-card {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.citi-card img {
+  height: 30vh;
+  margin-bottom: 50px;
+  -webkit-transform: rotate(350deg);
+  -moz-transform: rotate(350deg);
+  -ms-transform: rotate(350deg);
+  -o-transform: rotate(350deg);
+  transform: rotate(350deg);
+}
+.text {
+  text-align: left;
+  width: 45%;
+}
+.text h1 {
+  font-size: 42px;
+  margin: 0;
+}
+.text p {
+  font-size: 18px;
+}
+.text button {
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 20px;
+  margin: 40px 0;
+  background-color: #ffbf35;
+  border: 1px solid #ffbf35;
+  width: 200px;
+  justify-self: flex-end;
+}
+
+.head-of-nation {
+  background-color: white;
+  border: none;
+  margin-top: 50px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  height: 60vh;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.head-of-nation img {
+  width: 35vw;
+}
+
+.head-of-nation-info {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.head-of-nation-info h1 {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 1vh;
+}
+
+.btbox {
+  margin: 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.head-of-nation-info button {
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 20px;
+  margin: 40px 0px;
+  background-color: #ffbf35;
+  border: 1px solid #ffbf35;
+  width: fit-content;
+}
+
+@media screen and (min-width: 550px) and (max-width: 768px) {
+  .citi-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .text{
-    text-align: left;
-    width:45%;
+
+  .citi-card img {
+    height: 30vh;
   }
-  .text h1{
-    font-size: 42px;
+
+  .text {
+    text-align: center;
+    width: 45%;
+    margin-top: 2vh;
+  }
+
+  .text h1 {
+    font-size: 32px;
     margin: 0;
   }
-  .text p{
-    font-size: 18px;
+  .text p {
+    font-size: 16px;
   }
-  .text button{
+  .text button {
     font-weight: 700;
     padding: 12px 24px;
     border-radius: 20px;
@@ -24,55 +124,81 @@
     width: 200px;
     justify-self: flex-end;
   }
-  .citi-card-img{
-    width: 40%;
-    display: inline-flex;
-    justify-content: flex-end;
-    padding-right: 80px;
-    -webkit-transform: rotate(350deg);
-    -moz-transform: rotate(350deg);
-    -ms-transform: rotate(350deg);
-    -o-transform: rotate(350deg);
-    transform: rotate(350deg);
+
+  .head-of-nation-info h1 {
+    font-size: 26px;
+    font-weight: 400;
   }
-  .citi-card{
-    padding-top: 100px;
-    display: flex;
-  }
-  
-  .citi-card-img img{
-    height:200px
-  }
-  
-  .head-of-nation{
-    background-color: white;
-    border:none;
-    margin-top: 100px;
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
-    height:450px;
-    color: black;
-    display: flex;
-    justify-content: center;
-  }
-  .head-of-nation img{
-    height: 100%;
-  }
-  .head-of-nation-info{
-    margin-top: 60px;
+
+  .btbox {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
-  .head-of-nation-info button{
+
+  .head-of-nation-info button {
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 549px) {
+  .citi-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .citi-card img {
+    height: 20vh;
+  }
+  .text {
+    text-align: center;
+    width: 45%;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .text p {
+    font-size: 12px;
+  }
+  .text button {
     font-weight: 700;
     padding: 12px 24px;
     border-radius: 20px;
-    margin: 40px 0px;
+    margin-bottom: 0px;
     background-color: #ffbf35;
     border: 1px solid #ffbf35;
+    width: 200px;
+    justify-self: flex-end;
   }
-  .head-of-nation-info h1{
-    font-size: 36px;
+
+  .head-of-nation-info button {
+    margin: 5px;
+    width: 100%;
+  }
+  .head-of-nation-info h1 {
+    font-size: 25px;
     font-weight: 400;
   }
+
+  .btbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  b {
+    font-size: 3vw;
+  }
+
+  .head-of-nation img {
+    width: 50vw;
+  }
+}
