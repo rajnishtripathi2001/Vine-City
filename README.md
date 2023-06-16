@@ -1,181 +1,84 @@
-# Vine City The Virtual Nation
+# Vine City Hybrid Community Website
 
-Code for official Vine City website
+Welcome to the Vine City Hybrid Community Website! This is a full-stack web application designed to serve as a community platform for the Vine City community. The README file provides an overview of the project, including its features, technologies used, and instructions for setting up and running the application.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [Backend](#backend)
+- [Frontend](#frontend)
+- [API Documentation](#api-documentation)
+- [Contributing](#contributing)
+
+## Features
+
+The Vine City Hybrid Community Website offers the following features:
+
+1. **User Registration**: Users can register and create new accounts in the community database.
+2. **User Login**: Existing users can log in and access their personalized profiles and community pages.
+3. **Community Pages**: Special pages accessible only to logged-in users, providing community-specific information and resources.
+4. **News and Updates**: Displaying the latest news and updates fetched from the custom backend API.
+5. **Database Connectivity**: Integration with MongoDB Atlas for storing user information and community data.
+6. **Custom Backend**: The website has its own custom-made backend hosted separately in a different repository.
+7. **Responsive Design**: The frontend is built using React.js, ensuring a responsive and user-friendly experience across different devices.
+
+## Technologies
+
+The Vine City Hybrid Community Website utilizes the following technologies:
+
+- Frontend: React.js, HTML, CSS
+- Backend: Custom-made backend hosted separately (repository link: [https://github.com/rajnishtripathi2001/CRUD-API-VINE-CITY])
+- Database: MongoDB Atlas
+- API: Axios (for fetching data from the custom backend)
 
 ## Getting Started
-run `npm install` to install all dependencies
-run `npm start` to start the server
-run `npm run build` to build the project
-run `npm run deploy` to deploy the project to github pages
-run `npm run deploy:prod` to deploy the project to production
-run `npm run deploy:dev` to deploy the project to development
-run `npm run deploy:staging` to deploy the project to staging
-run `npm run deploy:local` to deploy the project to local
-run `npm run deploy:local:prod` to deploy the project to local production
+
+To run the Vine City Hybrid Community Website locally and explore its features, follow these steps:
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+- Node.js (version X.X.X)
+- NPM (version X.X.X)
+- MongoDB Atlas account
+- Internet connection
 
-``` 
-Node.js
+### Installation
+
+1. Clone the repository:
+
+```shell
+git clone https://github.com/your-username/vine-city-hybrid-community-website.git
 ```
-#### Installing
+2. Navigate to the project directory:
 
-A step by step series of examples that tell you how to get a development env running
+```shell
+cd vine-city-hybrid-community-website
+```
 
-```    
+3. Install the dependencies:
+
+```shell
 npm install
 ```
-### Running the tests
 
-Explain how to run the automated tests for this system
+### Backend
 
-```  
-npm test
+The Vine City Hybrid Community Website utilizes its own custom-made backend hosted separately. Please refer to the backend repository ([https://github.com/rajnishtripathi2001/CRUD-API-VINE-CITY]) for instructions on setting up and running the backend server.
+
+## Frontend
+
+1. Start the development server:
+```shell
+npm start
 ```
-### And coding style tests
+2. Open your web browser and visit [http://localhost:3000] to access the Vine City Hybrid Community Website.
 
-Explain what these tests test and why
+## API Documentation
 
-``` 
-Give an example
-```
-## Deployment
+The custom-made backend for the Vine City Hybrid Community Website provides a set of APIs for handling user requests and fetching data from the database. For detailed API documentation, please refer to the backend repository ([https://github.com/rajnishtripathi2001/CRUD-API-VINE-CITY]).
 
-Add additional notes about how to deploy this on a live system  
+## Contributing
 
-## Built With
-
-* [React](https://reactjs.org/) - The web framework used
-* [Redux](https://redux.js.org/) - State Management
-* [React Router](https://reacttraining.com/react-router/) - Routing
-* [React Router Redux]
-* [React Router Dom]
-* [React Router Redux]
-
-### Dev Dependencies
-
-you can find the full list of dependencies in the package.json file
-
-update the package.json file with the new dependencies
-
-install the new dependencies with `npm install` OR
-install the new dependencies with `npm install --save-dev` OR
-install the new dependencies with `npm install --save` OR
-install the new dependencies with `npm install --save-optional` OR
-install the new dependencies with `npm install --save-exact` OR
-install the new dependencies with `npm install --no-save` OR
-install the new dependencies with `npm install --dry-run` OR
-install the new dependencies with `npm install --no-package-lock` OR
-install the new dependencies with `npm install --no-shrinkwrap` OR
-
-### Contributing
-
-Please read [CONTRIBUTING.md]
-Please read [CODE_OF_CONDUCT.md]
-Please read [SECURITY.md]
-Please read [SUPPORT.md]
-Please read [LICENSE.md]
-Please read [CHANGELOG.md]
-Please read [CONTRIBUTORS.md]
-Please read [AUTHORS.md]
-Please read [MAINTAINERS.md]
-
-### Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository]
-see the [releases on this repository] documentation for details.
-History of the project can be found in the [CHANGELOG.md] file
-Just a reminder that the [CHANGELOG.md] file is a log of all notable changes made to a project. The log is ordered chronologically, most recent on top, and breaking changes are noted with the label breaking change. This log is for humans, not machines.
-Keep a [CHANGELOG.md] file in the root directory of a project. (or other location if required)
-Look the [CHANGELOG.md] file over before you push, and add your changes to the top of the file. (Unreleased section if required)
-Write all dates in the [CHANGELOG.md] in the ISO 8601 format YYYY-MM-DD.
-List releases and changes in the [CHANGELOG.md] file in reverse chronological order (newest on top).
-Write all things in the [CHANGELOG.md] in English.
-Reference issues and pull requests liberally in the [CHANGELOG.md], like GitHub does.
-Reference any other projects that are part of the release, like the [CHANGELOG.md] does.
-Use the present tense ("Add feature" not "Added feature").
-Use the imperative mood ("Move cursor to..." not "Moves cursor to...").
-Limit the first line to 72 characters or less.
-Reference issues and pull requests liberally after the first line.
-Consider starting the commit message with an applicable emoji: ⚡
-keep the [CHANGELOG.md] file clean and tidy
-keep the [CHANGELOG.md] file up to date
-Zappr will check the [CHANGELOG.md] file for you
-Zero tolerance for typos and spelling errors.
-Zero tolerance for grammar mistakes.
-Zero tolerance for punctuation errors.
-Zero tolerance for formatting errors.
-Zero tolerance for capitalization errors.
-Zero tolerance for spacing errors.
-Zero tolerance for indentation errors.
-Zero tolerance for line length errors.
-Zero tolerance for trailing whitespace errors.
-Zero tolerance for blank line errors.
-Zero tolerance for comment errors.
-Zero tolerance for console errors.
-Zero tolerance for debugger errors.
-Zero tolerance for alert errors.
-Zero tolerance for prompt errors.
-Zero tolerance for confirm errors.
-Zero tolerance for todo errors.
-Zero tolerance for fixme errors.
-
-commit messages should be in the following format
-`<type>(<scope>): <subject>`
-`<BLANK LINE>`
-`<body>`
-`<BLANK LINE>`
-`<footer>`
-The `<type>` and `<subject>` fields are mandatory.
-The `<scope>` field is optional.
-Any line of the commit message cannot be longer 100 characters!
-This allows the message to be easier to read on GitHub as well as in various git tools.
-The `<footer>` field is optional. It is used to reference issue tracker IDs.
-valid types are
-`feat` - A new feature
-`fix` - A bug fix
-`docs` - Documentation only changes
-`style` - Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-`refactor` - A code change that neither fixes a bug nor adds a feature
-`perf` - A code change that improves performance
-`test` - Adding missing tests
-`chore` - Changes to the build process or auxiliary tools and libraries such as documentation generation
-`revert` - Reverts a previous commit
-`WIP` - Work in progress
-
-breaking changes should be in the following format
-`BREAKING CHANGE: <description>`
-A BREAKING CHANGE can be part of commits of any type.
-Examples of commits that will trigger major, minor, and patch releases:
-`fix: correct minor typos in code`
-`feat: allow provided config object to extend other configs`
-`feat: close #1234 by migrating to angular 5`
-`perf: remove unncessary code from core`
-`BREAKING CHANGE: The Change is huge.`
-`fix: correct minor typos in code`
-`feat: allow provided config object to extend other configs`
-`feat: close #1234 by migrating to angular 5`
-`perf: remove unncessary code from core`
-`BREAKING CHANGE: The Change is huge.`
-A text that starts with BREAKING CHANGE: will be used as the release title. A commit contains a breaking change if it introduces a breaking change, or modifies existing code in a way that it introduces a breaking change later.
-
-note: you can use the following commands to generate the changelog
-`npm run changelog`
-`npm run changelog:minor`
-`npm run changelog:major`
-`npm run changelog:patch`
-`npm run changelog:prerelease`
-`npm run changelog:release`
-
-### Branching
-
-Branches are an important part of working with Git. No matter what your workflow, it is important that you understand how branches work, and how to use them effectively.
-Branches are pointers to a specific commit. The default branch name in Git is master. As you start making commits, you’re given a master branch that points to the last commit you made. Every time you commit, the master branch pointer moves forward automatically.
-Branches are cheap. They are just pointers to a specific commit. Creating a new branch is as quick and simple as writing a 41 byte file to disk. Because of this, branches are also disposable. You can create them, merge them, delete them, and throw them away, all without worrying about losing your code.
-
-master branch
-The master branch is the default branch when you create a repository. It’s up to you whether you use this branch or another for development. You can rename your master branch to main if you choose.
-The master branch should be used for production code only. This is the branch that is deployed to production. It should not be used for development or testing.
-The master branch should be protected. This means that no one can push directly to the master branch. All changes must be made through a pull request. This ensures that all code is reviewed before it is deployed.
+Contributions to the Vine City Hybrid Community Website are welcome and encouraged. If you want to contribute to this project, please follow the standard guidelines for contributing and submit your pull requests to the repository.
