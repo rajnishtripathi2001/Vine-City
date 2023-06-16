@@ -77,7 +77,7 @@ npm start
 
 ## API Documentation
 
-The custom-made backend for the Vine City Hybrid Community Website provides a set of APIs for handling user requests and fetching data from the database. For detailed API documentation, please refer to the backend repository (https://github.com/rajnishtripathi2001/CRUD-API-VINE-CITY).
+The custom-made backend for the Vine City Hybrid Community Website provides a set of APIs for handling user requests and fetching data from the database. For detailed API documentation, please refer to the [backend repository](https://github.com/rajnishtripathi2001/CRUD-API-VINE-CITY).
 
 ## Contributing
 
