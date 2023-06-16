@@ -29,7 +29,7 @@ The Vine City Hybrid Community Website offers the following features:
 The Vine City Hybrid Community Website utilizes the following technologies:
 
 - Frontend: React.js, HTML, CSS
-- Backend: Custom-made backend hosted separately (repository link: (https://github.com/rajnishtripathi2001/CRUD-API-VINE-CITY))
+- Backend: Custom-made backend hosted separately ([repository link:](https://github.com/rajnishtripathi2001/CRUD-API-VINE-CITY))
 - Database: MongoDB Atlas
 - API: Axios (for fetching data from the custom backend)
 
@@ -65,7 +65,7 @@ npm install
 
 ### Backend
 
-The Vine City Hybrid Community Website utilizes its own custom-made backend hosted separately. Please refer to the backend repository (https://github.com/rajnishtripathi2001/CRUD-API-VINE-CITY) for instructions on setting up and running the backend server.
+The Vine City Hybrid Community Website utilizes its own custom-made backend hosted separately. Please refer to the [backend repository](https://github.com/rajnishtripathi2001/CRUD-API-VINE-CITY) for instructions on setting up and running the backend server.
 
 ## Frontend
 
@@ -73,7 +73,7 @@ The Vine City Hybrid Community Website utilizes its own custom-made backend host
 ```shell
 npm start
 ```
-2. Open your web browser and visit (http://localhost:3000) to access the Vine City Hybrid Community Website.
+2. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to access the Vine City Hybrid Community Website.
 
 ## API Documentation
 
