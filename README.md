@@ -39,8 +39,8 @@ To run the Vine City Hybrid Community Website locally and explore its features, 
 
 ### Prerequisites
 
-- Node.js (version X.X.X)
-- NPM (version X.X.X)
+- Node.js
+- NPM
 - MongoDB Atlas account
 - Internet connection
 
