@@ -84,7 +84,7 @@ export default function Header({ counter }) {
 
               <div className="ban">
                 <h2>Discover new horizons!</h2>
-                <p>Asgardians with a resident status have more <br/> opportunities and benefits.</p>
+                <p>Vinish with a resident status have more <br/> opportunities and benefits.</p>
               </div>
 
               <div className="button-wrapper">
